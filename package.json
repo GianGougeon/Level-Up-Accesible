@@ -1,0 +1,11 @@
+{
+    "name": "Level-Up Accesible",
+    "version": "1.0.0",
+    "description": "Proyecto con HTML, CSS, JS y Sass",
+    "scripts": {
+        "build": "node-sass src/scss/main.scss src/css/styles.css",
+        "dev": "sass --watch src/scss/main.scss:src/css/styles.css"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}
