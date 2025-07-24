@@ -3,10 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Level-Up Accesible - Comunidad de gaming inclusivo para jugadores con discapacidades">
+    <title>Level-Up Accesible - Gaming Inclusivo</title>
 </head>
 <body>
-    <script src="js/app.js"></script>
+    
+    
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="#">
+                <span>Level-Up Accesible</span>
+            </a>
+            <button aria-expanded="false" aria-label="Menú de navegación">
+                <span>☰</span>
+            </button>
+            <ul>
+                <li><a href="#" aria-current="page">Home</a></li>
+                <li><a href="#">Noticias y lanzamientos</a></li>
+                <li><a href="#">Consolas y periféricos</a></li>
+                <li><a href="#">Comunidad</a></li>
+                <li><a href="#">Foro de ayuda</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+            </ul>
+        </nav>
+        
+        <section aria-label="Presentación principal">
+            <h1>Bienvenidos a Level-Up Accesible</h1>
+            <p>Tu portal de gaming inclusivo donde todos los jugadores tienen un lugar</p>
+            <div>
+                <a href="#about">Conócenos</a>
+                <a href="#sections">Explorar</a>
+            </div>
+        </section>
+    </header>
+    
+    <main id="main-content">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Nuestra Comunidad</h2>
+            <div>
+                <div>
+                    <p>Level-Up Accesible nació con la misión de hacer el mundo del gaming más inclusivo para jugadores con discapacidades.</p>
+                    <p>Somos una comunidad que investiga, prueba y recomienda videojuegos, consolas, periféricos y configuraciones que hacen posible que todos disfruten de esta pasión.</p>
+                    <p>Creemos que los videojuegos son para todos, y trabajamos para derribar las barreras que limitan la experiencia de algunos jugadores.</p>
+                    <a href="#">Únete a nosotros</a>
+                </div>
+                <div>
+                    <figure>
+                        <img src="" alt="Imagen de presentación de nuestra comunidad">
+                        <figcaption>Imagen de presentación de nuestra comunidad</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
+        <section id="sections" aria-labelledby="sections-heading">
+            <h2 id="sections-heading">Explora Nuestro Contenido</h2>
+            <div>
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="videojuegos.jpg" alt="Videojuegos accesibles">
+                            <div>
+                                <h3>Videojuegos</h3>
+                                <p>Descubre juegos con opciones de accesibilidad y cómo configurarlos para tus necesidades.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="consolas.jpg" alt="Hardware accesible">
+                            <div>
+                                <h3>Consolas y periféricos</h3>
+                                <p>Conoce los periféricos y consolas adaptados para diferentes discapacidades.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="comunidad.jpg" alt="Comunidades inclusivas">
+                            <div>
+                                <h3>Comunidad</h3>
+                                <p>Conecta con otros jugadores y grupos que promueven el gaming inclusivo.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="foro.jpg" alt="Recursos y guías">
+                            <div>
+                                <h3>Foro de ayuda</h3>
+                                <p>Pregunta, comparte y encuentra soluciones con nuestra comunidad.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+        
+        <section aria-labelledby="testimonial-heading">
+            <h2 id="testimonial-heading">Testimonios</h2>
+            <div>
+                <div>
+                    <blockquote>
+                        <p>"Gracias a Level-Up Accesible pude encontrar la configuración perfecta para disfrutar de mis juegos favoritos a pesar de mi discapacidad visual. Ahora juego más que nunca."</p>
+                        <footer>Carlos M., miembro desde 2021</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer aria-label="Pie de página">
+        <div>
+            <div>
+                <div>
+                    <h3>Level-Up Accesible</h3>
+                    <p>Promoviendo la inclusión en el mundo del gaming desde 2020.</p>
+                    <div>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#">Accesibilidad del sitio</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Contribuye</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>Suscríbete</h3>
+                    <p>Recibe las últimas noticias y recursos sobre gaming accesible.</p>
+                    <form aria-label="Formulario de suscripción">
+                        <div>
+                            <input type="email" placeholder="Tu correo" aria-label="Tu correo electrónico" required>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div>
+                <p>&copy; 2025 Level-Up Accesible. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
