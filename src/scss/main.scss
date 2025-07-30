@@ -1,1 +1,9 @@
 /* Archivo principal de estilos */
+@use "./pages/inicio";
+@use "./pages/videoJuegos";
+@use "./pages/comunidades";
+@use "./pages/hardware";
+@use "./pages/recursos";
+@use "./pages/contacto";
+
+@use "./components/header";

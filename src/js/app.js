@@ -1,1 +1,1 @@
-// Archivo principal de JavaScript
+// JavaScript 

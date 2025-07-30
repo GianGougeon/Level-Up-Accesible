@@ -1,3 +1,47 @@
 /* Archivo principal de estilos */
+/* Variables de colores y fuentes */
+.texto-primary {
+  color: #1a237e;
+}
+
+.game-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.accessibility-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #1a237e;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.platform-icon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+  color: #1a237e;
+}
+
+.navbar-nav a {
+  color: white !important;
+}
+.navbar-nav .active {
+  color: rgb(255, 255, 255) !important;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.navbar-nav .nav-link:focus {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
 
 /*# sourceMappingURL=styles.css.map */
