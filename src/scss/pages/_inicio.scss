@@ -1,4 +1,15 @@
 @use "./../abstracts/variables";
+
 .texto-primary {
     color: variables.$primary-color;
+}
+
+.hero-section {
+    min-height: 60vh;
+    > img {
+        top: 0;
+        left: 0;
+        filter: brightness(0.5);
+        pointer-events: none;
+    }
 }

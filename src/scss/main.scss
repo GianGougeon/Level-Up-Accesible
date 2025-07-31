@@ -1,9 +1,14 @@
 /* Archivo principal de estilos */
+/* abstracts */
+@use "./abstracts/accessibility";
+/* base */
+@use "./base/reset";
+/* pages */
 @use "./pages/inicio";
 @use "./pages/videoJuegos";
 @use "./pages/comunidades";
 @use "./pages/hardware";
 @use "./pages/recursos";
 @use "./pages/contacto";
-
+/* components */
 @use "./components/header";

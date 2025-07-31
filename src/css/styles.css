@@ -1,7 +1,174 @@
 /* Archivo principal de estilos */
+/* abstracts */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid #ff6b00 !important;
+}
+
+.focus-visible:focus {
+  outline: 3px solid #ff6b00 !important;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+}
+.card-hover:focus-within, a:focus .card-hover {
+  outline: 3px solid #ff6b00 !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25) !important;
+  transform: translateY(-5px);
+}
+
+/* base */
+/* scss/reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* pages */
 /* Variables de colores y fuentes */
 .texto-primary {
   color: #1a237e;
+}
+
+.hero-section {
+  min-height: 60vh;
+}
+.hero-section > img {
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
+  pointer-events: none;
 }
 
 .game-card {
@@ -30,8 +197,10 @@
   color: #1a237e;
 }
 
+/* components */
 .navbar-nav a {
   color: white !important;
+  font-weight: 500;
 }
 .navbar-nav .active {
   color: rgb(255, 255, 255) !important;
