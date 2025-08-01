@@ -19,7 +19,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #1a237e">
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="./index.html" style="font-size: 1.3rem">
+                    <a class="navbar-brand d-flex align-items-center" href="" style="font-size: 1.3rem">
                         <span class="me-2" aria-hidden="true">🎮</span>
                         <span>Level-Up Accesible</span>
                     </a>
@@ -29,7 +29,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item mx-1">
-                                <a class="nav-link px-3 py-2 rounded active" href="./index.html">Inicio</a>
+                                <a class="nav-link px-3 py-2 rounded active" href="./index.html" aria-current="page">Inicio</a>
                             </li>
                             <li class="nav-item mx-1">
                                 <a class="nav-link px-3 py-2 rounded" aria-current="page" href="./src/pages/videoJuegos.html">Videojuegos</a>
@@ -51,17 +51,24 @@
                 </div>
             </nav>
             <!-- Sección principal de bienvenida con imagen de fondo, título, texto descriptivo y botones de llamada a la acción -->
-            <section class="hero-section d-flex align-items-center text-white position-relative overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Persona usando un control de videojuegos, fondo de ambiente gamer" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
-                <div class="container text-center py-5 position-relative z-1">
-                    <h1 class="display-3 fw-bold mb-4">Bienvenidos a Level-Up Accesible</h1>
-                    <p class="lead mb-5">Tu portal de gaming inclusivo donde todos los jugadores tienen un lugar</p>
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="#about" class="btn btn-primary btn-lg px-4">Conócenos</a>
-                        <a href="#sections" class="btn btn-outline-light btn-lg px-4">Explorar</a>
-                    </div>
-                </div>
-            </section>
+           <section class="hero-section hero d-flex align-items-center text-white position-relative overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+         alt="Persona usando un control de videojuegos, fondo de ambiente gamer" 
+         class="hero-img position-absolute w-100 h-100 object-fit-cover" />
+
+    <!-- Overlay oscuro -->
+    <div class="hero-overlay position-absolute w-100 h-100"></div>
+
+    <!-- Contenido -->
+    <div class="container text-center py-5 position-relative z-1">
+        <h1 class="display-3 fw-bold mb-4">Bienvenidos a Level-Up Accesible</h1>
+        <p class="lead lead-slogan mb-5">Tu portal de gaming inclusivo donde todos los jugadores tienen un lugar</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#about" class="btn btn-primary btn-lg px-4">Conócenos</a>
+            <a href="#sections" class="btn btn-primary btn-lg px-4">Explorar</a>
+        </div>
+    </div>
+</section>
         </header>
         <!-- Contenido principal -->
         <main id="main-content" class="py-5">
