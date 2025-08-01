@@ -24,6 +24,7 @@ select:focus {
   transform: translateY(-5px);
 }
 
+/* Variables de colores y fuentes */
 /* base */
 /* scss/reset.scss */
 html,
@@ -156,18 +157,43 @@ table {
 }
 
 /* pages */
-/* Variables de colores y fuentes */
 .texto-primary {
   color: #1a237e;
 }
 
 .hero-section {
+  background: #1a237e;
   min-height: 60vh;
+  position: relative;
+}
+.hero-section .container h1 {
+  background-color: transparent !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-section .container p {
+  background-attachment: fixed;
+  color: rgba(255, 255, 255, 0.9);
+}
+.hero-section .lead-slogan {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+.hero-section .btn-primary {
+  background-color: #0a58ca;
+  border: none;
+  font-weight: 600;
+}
+.hero-section .btn-outline-light {
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  color: white;
+  background: transparent;
+}
+.hero-section .btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .hero-section > img {
   top: 0;
   left: 0;
-  filter: brightness(0.5);
   pointer-events: none;
 }
 
