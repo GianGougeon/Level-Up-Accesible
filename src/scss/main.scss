@@ -2,6 +2,9 @@
 /* abstracts */
 @use "./abstracts/accessibility";
 @use "./abstracts/variables";
+@use "./abstracts/_utilities.scss";
+/* layouts */
+@use "./layouts/_sections.scss";
 /* base */
 @use "./base/reset";
 /* pages */
@@ -13,3 +16,4 @@
 @use "./pages/contacto";
 /* components */
 @use "./components/header";
+@use "./components/footer";

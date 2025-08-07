@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.footer {
+    button {
+        @include m.btn;
+        border: 1px solid white !important;
+    }
+}

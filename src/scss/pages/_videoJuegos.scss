@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
 .game-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
@@ -22,4 +24,12 @@
     font-size: 1.5rem;
     margin-right: 5px;
     color: #1a237e;
+}
+.img-port {
+    filter: grayscale(80%);
+}
+.videoJuegos-filtro {
+    a {
+        @include m.btn;
+    }
 }

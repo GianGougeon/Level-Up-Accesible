@@ -1,0 +1,17 @@
+@use "./../abstracts/_variables.scss" as v;
+@use "./../abstracts/_mixins.scss" as m;
+.background-primary {
+    background-color: v.$primary-color;
+}
+.background-secondary {
+    background-color: v.$secondary-color;
+}
+.btn-primary {
+    background-color: v.$primary-color !important;
+    color: white !important;
+    border: none !important;
+    @include m.btn;
+    &:hover {
+        background-color: v.$secondary-color !important;
+    }
+}

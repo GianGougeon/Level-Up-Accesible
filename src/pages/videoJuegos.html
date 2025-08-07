@@ -16,9 +16,9 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #1a237e">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3 background-primary">
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="./../../index.html" style="font-size: 1.3rem">
+                    <a class="navbar-brand d-flex align-items-center" href="./../../index.html">
                         <span class="me-2" aria-hidden="true">🎮</span>
                         <span>Level-Up Accesible</span>
                     </a>
@@ -50,13 +50,15 @@
                 </div>
             </nav>
 
-            <section aria-label="Presentación principal" class="text-center py-5" style="background-color: #f8f9fa; color: #212529">
-                <div class="container">
-                    <h1 class="display-4 mb-3" style="font-weight: 700">Videojuegos Accesibles</h1>
-                    <p class="lead mb-4" style="font-size: 1.25rem">Descubre los mejores juegos con opciones de accesibilidad para todas las capacidades</p>
-                    <div>
-                        <a href="#juegos-destacados" class="btn btn-primary btn-lg mx-2 px-4 py-2" style="font-weight: 500; background-color: #1a237e; border: none">Juegos Destacados</a>
-                        <a href="#filtros" class="btn btn-outline-primary btn-lg mx-2 px-4 py-2" style="font-weight: 500; color: #1a237e; border-color: #1a237e">Filtrar por Necesidad</a>
+            <section aria-label="Presentación principal" class="hero-section hero d-flex align-items-center text-white position-relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fondo con pantallas de videojuegos" class="hero-img position-absolute w-100 h-100 object-fit-cover img-port" />
+                <!-- Contenido -->
+                <div class="container text-center py-5 position-relative z-1">
+                    <h1 class="display-4 fw-bold mb-3">Videojuegos Accesibles</h1>
+                    <p class="lead lead-slogan mb-4">Descubre los mejores juegos con opciones de accesibilidad para todas las capacidades</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#juegos-destacados" class="btn btn-primary btn-lg">Juegos Destacados</a>
+                        <a href="#filtros" class="btn btn-primary btn-lg">Filtrar por Necesidad</a>
                     </div>
                 </div>
             </section>
@@ -65,20 +67,13 @@
         <main id="main-content" class="py-5">
             <section id="juegos-destacados" class="container mb-5" aria-labelledby="juegos-destacados-heading">
                 <h2 id="juegos-destacados-heading" class="text-center mb-4">Juegos Destacados</h2>
-                <div class="row g-4">
-                    <!-- Juego 1 -->
-                    
-
-                    <!-- Juego 2 -->
-                   
-
-                    <!-- Juego 3 -->
-                   
+                <div class="row g-4" id="games-container">
+                    <!-- Lista de juegos API -->
                 </div>
             </section>
 
-            <section id="filtros" class="container mb-5" aria-labelledby="filtros-heading">
-                <h2 id="filtros-heading" class="text-center mb-4">Filtrar por Necesidad Específica</h2>
+            <section id="filtros" class="container mb-5 videoJuegos-filtro" aria-labelledby="filtros-heading">
+                <h2 id="filtros-heading" class="text-center mb-4 filtros-heading">Filtrar por Necesidad Específica</h2>
                 <div class="row g-4">
                     <div class="col-md-4">
                         <div class="card h-100">
@@ -86,7 +81,7 @@
                                 <i class="fas fa-eye fa-3x mb-3" style="color: #1a237e"></i>
                                 <h3 class="card-title h5">Discapacidad Visual</h3>
                                 <p class="card-text">Juegos con audio descriptivo, alto contraste y asistencia de navegación.</p>
-                                <a href="#" class="btn btn-primary" style="background-color: #1a237e; border: none">Ver juegos</a>
+                                <a href="#" class="btn btn-primary">Ver juegos</a>
                             </div>
                         </div>
                     </div>
@@ -96,7 +91,7 @@
                                 <i class="fas fa-deaf fa-3x mb-3" style="color: #1a237e"></i>
                                 <h3 class="card-title h5">Discapacidad Auditiva</h3>
                                 <p class="card-text">Subtítulos personalizables, indicadores visuales y vibración para sonidos importantes.</p>
-                                <a href="#" class="btn btn-primary" style="background-color: #1a237e; border: none">Ver juegos</a>
+                                <a href="#" class="btn btn-primary">Ver juegos</a>
                             </div>
                         </div>
                     </div>
@@ -106,7 +101,7 @@
                                 <i class="fas fa-wheelchair fa-3x mb-3" style="color: #1a237e"></i>
                                 <h3 class="card-title h5">Movilidad Reducida</h3>
                                 <p class="card-text">Controles personalizables, asistencia de juego y opciones para un solo brazo/mano.</p>
-                                <a href="#" class="btn btn-primary" style="background-color: #1a237e; border: none">Ver juegos</a>
+                                <a href="#" class="btn btn-primary">Ver juegos</a>
                             </div>
                         </div>
                     </div>
@@ -133,7 +128,7 @@
             </section>
         </main>
 
-        <footer class="bg-dark text-white py-5">
+        <footer class="bg-dark text-white py-5 footer">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-4 mb-md-0">
@@ -174,5 +169,6 @@
                 </div>
             </div>
         </footer>
+        <script type="module" src="./../js/videoJuegos.js" defer></script>
     </body>
 </html>

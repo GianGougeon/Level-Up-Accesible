@@ -1,0 +1,6 @@
+/* Arreglo de header en modo tablet-mobil */
+.ms-auto {
+    @media screen and (max-width: 992px) {
+        padding-top: 1rem;
+    }
+}

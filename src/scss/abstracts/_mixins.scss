@@ -1,1 +1,10 @@
+@use "../abstracts/variables" as v;
 /* Mixins reutilizables */
+
+@mixin btn {
+    background-color: v.$primary-color !important;
+    border: none !important;
+    &:hover {
+        background-color: v.$secondary-color !important;
+    }
+}

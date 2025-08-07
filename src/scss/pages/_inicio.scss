@@ -1,55 +1,21 @@
 @use "../abstracts/variables" as v;
-
+@use "../abstracts/mixins" as m;
 .texto-primary {
     color: v.$primary-color;
 }
 
 .hero-section {
-     background: #1a237e; // Fondo oscuro
+    background: v.$primary-color; // Fondo oscuro
     min-height: 60vh;
     position: relative;
     .container {
-      h1 {
-          background-color: transparent !important;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); // Sombra para mejorar legibilidad
-      }
-    
-      p {
-          background-attachment: fixed;
-        color: rgba(255, 255, 255, 0.9); // Texto ligeramente menos blanco para reducir "vibración"
-      }
-    }
-    
-    .lead-slogan{
-      background-color:transparent!important;
-      color: #ffffff !important;
-    }
-    
-    // Botones
-    .btn {
-      &-primary {
-        background-color: v.$btn-primary-bg;
-        border: none;
-        font-weight: 600; // Texto más grueso
-    
-      }
-    
-      &-outline-light {
-        border: 2px solid rgba(255, 255, 255, v.$btn-outline-border-opacity);
-        color: white;
-        background: transparent;
-    
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.15);
+        h1 {
+            background-color: transparent !important;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); // Sombra para mejorar legibilidad
         }
-      }
     }
-    > img {
-        top: 0;
-        left: 0;
-        pointer-events: none;
-      
-  
+    .btn {
+        @include m.btn;
     }
 }
 
