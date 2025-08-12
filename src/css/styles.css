@@ -142,7 +142,6 @@ video {
   margin: 0;
   border: 0;
   font-size: 100%;
-  font-family: "Roboto", sans-serif;
   vertical-align: baseline;
 }
 
@@ -251,6 +250,9 @@ table {
 header > nav > div > a {
   font-size: 1.3rem !important;
 }
+header .navbar-nav {
+  flex-wrap: nowrap;
+}
 header .navbar-nav a {
   color: white !important;
   font-weight: 500;
@@ -259,6 +261,14 @@ header .navbar-nav .active {
   color: rgb(255, 255, 255) !important;
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.15);
+}
+header .navbar-nav .nav-item {
+  white-space: nowrap;
+}
+header .navbar-nav .nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 header .navbar-nav .nav-link:focus {
   outline: 3px solid #ffffff;
