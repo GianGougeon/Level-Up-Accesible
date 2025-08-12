@@ -32,6 +32,11 @@ select:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .consola-logo {
+    width: 60px;
+  }
+}
 /* layouts */
 /* Mixins reutilizables */
 .background-primary {
@@ -209,47 +214,43 @@ table {
   background-color: #0a58ca !important;
 }
 
-.game-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-}
-.game-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.table td {
+  align-content: space-around;
+  align-items: center;
 }
 
-.accessibility-badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table th {
   background-color: #1a237e;
   color: white;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 0.8rem;
+  position: sticky;
+  top: 0;
 }
 
-.platform-icon {
-  font-size: 1.5rem;
-  margin-right: 5px;
-  color: #1a237e;
+.table-hover tbody tr:hover {
+  background-color: rgba(26, 35, 126, 0.1);
 }
 
-.img-port {
-  filter: grayscale(80%);
+.badge-access {
+  font-size: 0.8em;
+  margin-right: 3px;
 }
 
-.videoJuegos-filtro a {
-  background-color: #1a237e !important;
-  border: none !important;
-}
-.videoJuegos-filtro a:hover {
-  background-color: #0a58ca !important;
+.consola-logo {
+  width: 80px;
+  height: auto;
 }
 
 /* components */
 header > nav > div > a {
   font-size: 1.3rem !important;
+}
+header .navbar-nav {
+  flex-wrap: nowrap;
 }
 header .navbar-nav a {
   color: white !important;
@@ -259,6 +260,14 @@ header .navbar-nav .active {
   color: rgb(255, 255, 255) !important;
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.15);
+}
+header .navbar-nav .nav-item {
+  white-space: nowrap;
+}
+header .navbar-nav .nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 header .navbar-nav .nav-link:focus {
   outline: 3px solid #ffffff;

@@ -4,3 +4,9 @@
         padding-top: 1rem;
     }
 }
+// Estilos para la tabla de Consolas y Periféricos
+@media (max-width: 768px) {
+    .consola-logo {
+        width: 60px;
+    }
+}

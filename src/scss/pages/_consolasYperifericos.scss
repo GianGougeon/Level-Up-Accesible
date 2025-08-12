@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.table {
+    td {
+        align-content: space-around;
+        align-items: center;
+    }
+}
+
+// Estilos personalizados para la tabla
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    th {
+        background-color: v.$primary-color;
+        color: white;
+        position: sticky;
+        top: 0;
+    }
+}
+
+.table-hover {
+    tbody {
+        tr:hover {
+            background-color: rgba(26, 35, 126, 0.1);
+        }
+    }
+}
+
+.badge-access {
+    font-size: 0.8em;
+    margin-right: 3px;
+}
+
+.consola-logo {
+    width: 80px;
+    height: auto;
+}

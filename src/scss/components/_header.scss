@@ -6,17 +6,30 @@ header {
             }
         }
     }
+    
     .navbar-nav {
+        flex-wrap: nowrap; // No permite que los ítems bajen de línea
+        
         a {
             color: white !important;
             font-weight: 500;
         }
+        
         .active {
             color: rgb(255, 255, 255) !important;
             font-weight: 600;
             background-color: rgba(255, 255, 255, 0.15);
         }
+        
+        .nav-item {
+            white-space: nowrap; // Mantiene el texto en una sola línea
+        }
+        
         .nav-link {
+            display: inline-block;
+            padding: 0.5rem 1rem; // Asegura tamaño uniforme
+            font-size: clamp(0.8rem, 1.5vw, 1rem); // Ajusta el texto según ancho pantalla
+            
             &:focus {
                 outline: 3px solid #ffffff;
                 outline-offset: 2px;

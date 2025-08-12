@@ -9,11 +9,11 @@
 @use "./base/reset";
 /* pages */
 @use "./pages/inicio";
-@use "./pages/videoJuegos";
-@use "./pages/comunidades";
-@use "./pages/hardware";
-@use "./pages/recursos";
-@use "./pages/contacto";
+// @use "./pages/noticiasYlanzamientos";
+@use "./pages/consolasYperifericos";
+// @use "./pages/comunidades";
+// @use "./pages/foro";
+// @use "./pages/accesibilidad";
 /* components */
 @use "./components/header";
 @use "./components/footer";
