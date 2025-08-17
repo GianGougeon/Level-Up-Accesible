@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Comunidades inclusivas de gaming: encuentra grupos de juego, torneos accesibles y puntos de encuentro para jugadores con discapacidades." />
+        <meta name="keywords" content="comunidades gaming inclusivo, grupos de juego accesibles, torneos para discapacitados, mapa gaming accesible, contactar jugadores inclusivos" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/styles.css" />
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <!-- JS -->
+        <script src="./../js/app.js" type="module" defer></script>
+
+        <title>Comunidades Inclusivas | Level-Up Accesible</title>
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-dark py-3 background-primary">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="./../../index.html">
+                        <span class="me-2" aria-hidden="true">🎮</span>
+                        <span>Level-Up Accesible</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mx-1"><a class="nav-link px-3 py-2 rounded" href="./../../index.html">Inicio</a></li>
+                            <li class="nav-item mx-1"><a class="nav-link px-3 py-2 rounded" href="./noticiasYlanzamientos.html">Noticias y lanzamientos</a></li>
+                            <li class="nav-item mx-1"><a class="nav-link px-3 py-2 rounded" href="./consolasYperifericos.html">Consolas y periféricos</a></li>
+                            <li class="nav-item mx-1"><a class="nav-link px-3 py-2 rounded active" href="./comunidades.html" aria-current="page">Comunidades</a></li>
+                            <li class="nav-item mx-1"><a class="nav-link px-3 py-2 rounded" href="./recursos.html">Foro de ayuda</a></li>
+                            <li class="nav-item mx-1"><a class="nav-link px-3 py-2 rounded" href="./contacto.html">Accesibilidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="hero-section hero d-flex align-items-center text-white position-relative overflow-hidden">
+                <img src="./../assets/images/comunidades/comunidades.png" alt="Personas diversas jugando videojuegos en comunidad" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
+                <div class="container text-center py-5 position-relative z-1">
+                    <h1 class="display-4 fw-bold mb-3">Comunidades Inclusivas</h1>
+                    <p class="lead mb-4">Conecta con otros jugadores y encuentra espacios accesibles</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#mapa" class="btn btn-primary btn-lg">Ver Mapa</a>
+                        <a href="#grupos" class="btn btn-primary btn-lg">Grupos de Juego</a>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main id="main-content" class="py-5">
+            <!-- Sección del mapa -->
+            <section id="mapa" class="container mb-5">
+                <h2 class="text-center mb-4">Encuentra Comunidades y Eventos</h2>
+                <p class="text-center mb-4">Explora nuestro mapa interactivo con puntos de encuentro, torneos inclusivos y espacios de gaming accesibles.</p>
+
+                <div id="map" role="application" aria-label="Mapa interactivo con comunidades y eventos"></div>
+
+                <aside class="alert alert-info mt-3" role="note">
+                    <i class="fas fa-info-circle me-2"></i> ¿Conoces un lugar que no aparece en el mapa?
+                    <button class="btn btn-sm ms-2 btn-primary" data-bs-toggle="modal" data-bs-target="#sugerirLugarModal">Sugerir nuevo lugar</button>
+                </aside>
+            </section>
+
+            <!-- Sección grupos -->
+            <section id="grupos" class="container mb-5">
+                <h2 class="text-center mb-4">Grupos y Comunidades</h2>
+                <p class="text-center mb-5">Conecta con estos grupos inclusivos de gaming. Todos son bienvenidos.</p>
+
+                <ul class="row g-4 p-0">
+                    <!-- Grupo 1 -->
+                    <li class="col-md-6 col-lg-4 community-card">
+                        <article class="card h-100">
+                            <div class="card-body">
+                                <header class="d-flex align-items-center mb-3">
+                                    <img src="./../assets/images/comunidades/logos/grupo1.avif" alt="Logo de Gaming Sin Barreras" class="rounded-circle me-3" width="50" height="50" />
+                                    <h3 class="h5 mb-0">Gaming Sin Barreras</h3>
+                                </header>
+                                <p>Comunidad hispanohablante para jugadores con discapacidad física. Organizamos torneos mensuales.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-users me-2"></i>1200+ miembros</li>
+                                    <li><i class="fas fa-gamepad me-2"></i>Fortnite y FIFA</li>
+                                    <li><i class="fas fa-globe me-2"></i>Discord y WhatsApp</li>
+                                </ul>
+                                <button class="btn btn-primary w-100" type="button" onclick="alert('Te hemos enviado los datos de contacto por correo electrónico')">Unirme</button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- Grupo 2 -->
+                    <li class="col-md-6 col-lg-4 community-card">
+                        <article class="card h-100">
+                            <div class="card-body">
+                                <header class="d-flex align-items-center mb-3">
+                                    <img src="./../assets/images/comunidades/logos/grupo2.webp" alt="Logo de Visual Gamers" class="rounded-circle me-3" width="50" height="50" />
+                                    <h3 class="h5 mb-0">Visual Gamers</h3>
+                                </header>
+                                <p>Grupo para jugadores con discapacidad visual. Compartimos configuraciones y juegos accesibles.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-users me-2"></i>800+ miembros</li>
+                                    <li><i class="fas fa-gamepad me-2"></i>The Last of Us, Gears 5</li>
+                                    <li><i class="fas fa-globe me-2"></i>Facebook y Telegram</li>
+                                </ul>
+                                <button class="btn btn-primary w-100" type="button" onclick="alert('Te hemos enviado los datos de contacto por correo electrónico')">Unirme</button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- Grupo 3 -->
+                    <li class="col-md-6 col-lg-4 community-card">
+                        <article class="card h-100">
+                            <div class="card-body">
+                                <header class="d-flex align-items-center mb-3">
+                                    <img src="./../assets/images/comunidades/logos/grupo3.webp" alt="Logo de Todos Jugamos" class="rounded-circle me-3" width="50" height="50" />
+                                    <h3 class="h5 mb-0">Todos Jugamos</h3>
+                                </header>
+                                <p>Comunidad inclusiva que organiza eventos presenciales y online con accesibilidad garantizada.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-users me-2"></i>2500+ miembros</li>
+                                    <li><i class="fas fa-gamepad me-2"></i>Variedad de juegos</li>
+                                    <li><i class="fas fa-globe me-2"></i>Discord y Meetups</li>
+                                </ul>
+                                <button class="btn btn-primary w-100" type="button" onclick="alert('Te hemos enviado los datos de contacto por correo electrónico')">Unirme</button>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Formulario nuevo grupo -->
+            <section class="container bg-light p-5 rounded-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="mb-4">¿Tienes un grupo inclusivo?</h2>
+                        <p>Si formas parte de una comunidad de gaming accesible o quieres crear una, ¡háznoslo saber!</p>
+                        <p>Podemos incluirte en nuestro directorio y ayudarte a conectar con más jugadores.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form id="formGrupo" aria-label="Formulario para registrar un grupo inclusivo">
+                            <fieldset class="border rounded-3 p-3">
+                                <legend class="float-none w-auto px-2">Registro de grupo</legend>
+                                <label for="nombreGrupo" class="form-label">Nombre del grupo</label>
+                                <input type="text" class="form-control mb-3" id="nombreGrupo" required />
+
+                                <label for="contactoGrupo" class="form-label">Contacto</label>
+                                <input type="text" class="form-control mb-3" id="contactoGrupo" placeholder="Email, enlace o teléfono" required />
+
+                                <button type="submit" class="btn btn-primary">Enviar información</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal sugerir lugar -->
+        <section class="modal fade" id="sugerirLugarModal" tabindex="-1" aria-labelledby="sugerirLugarModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2 class="modal-title fs-5" id="sugerirLugarModalLabel">Sugerir nuevo lugar</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </header>
+                    <div class="modal-body">
+                        <form id="formLugar">
+                            <fieldset class="border rounded-3 p-3">
+                                <legend class="float-none w-auto px-2">Detalles del lugar</legend>
+                                <div class="mb-3">
+                                    <label for="nombreLugar" class="form-label">Nombre del lugar</label>
+                                    <input type="text" class="form-control" id="nombreLugar" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="direccionLugar" class="form-label">Dirección</label>
+                                    <input type="text" class="form-control" id="direccionLugar" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tipoLugar" class="form-label">Tipo de lugar</label>
+                                    <select class="form-select" id="tipoLugar" required>
+                                        <option value="">Selecciona...</option>
+                                        <option value="comunidad">Comunidad/Club</option>
+                                        <option value="torneo">Lugar de torneos</option>
+                                        <option value="cafe">Café/Espacio gaming</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="infoLugar" class="form-label">Información adicional</label>
+                                    <textarea class="form-control" id="infoLugar" rows="3"></textarea>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" onclick="alert('Gracias por tu sugerencia. Revisaremos la información y la añadiremos al mapa pronto.')" data-bs-dismiss="modal">Enviar sugerencia</button>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-5 footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h3 class="h5 mb-3">Level-Up Accesible</h3>
+                        <p>Promoviendo la inclusión en el mundo del gaming desde 2025.</p>
+                        <div class="d-flex gap-3 mt-4">
+                            <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                            <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="#" class="text-white" aria-label="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h3 class="h5 mb-3">Enlaces rápidos</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="./../../index.html" class="text-white text-decoration-none">Inicio</a></li>
+                            <li class="mb-2"><a href="./noticiasYlanzamientos.html" class="text-white text-decoration-none">Noticias y lanzamientos</a></li>
+                            <li class="mb-2"><a href="./consolasYperifericos.html" class="text-white text-decoration-none">Consolas y periféricos</a></li>
+                            <li class="mb-2"><a href="./comunidades.html" class="text-white text-decoration-none">Comunidades</a></li>
+                            <li class="mb-2"><a href="./recursos.html" class="text-white text-decoration-none">Foro de ayuda</a></li>
+                            <li class="mb-2"><a href="./contacto.html" class="text-white text-decoration-none">Accesibilidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="h5 mb-3">Suscríbete</h3>
+                        <p>Recibe las últimas noticias y recursos sobre gaming accesible.</p>
+                        <form>
+                            <div class="input-group mb-3">
+                                <label for="suscribirEmail" class="visually-hidden">Correo electrónico</label>
+                                <input type="email" id="suscribirEmail" class="form-control" placeholder="Tu correo" required />
+                                <button class="btn btn-primary" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <p class="text-center mb-0">&copy; 2025 Level-Up Accesible. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>

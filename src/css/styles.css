@@ -258,6 +258,25 @@ table {
   height: auto;
 }
 
+#map {
+  height: 500px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.community-card {
+  transition: transform 0.3s;
+  list-style: none;
+}
+.community-card:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+.community-card article button {
+  margin-top: 1rem;
+}
+
 /* components */
 header > nav > div > a {
   font-size: 1.3rem !important;

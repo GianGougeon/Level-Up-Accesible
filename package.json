@@ -6,6 +6,7 @@
         "build": "node-sass src/scss/main.scss src/css/styles.css",
         "dev": "sass --watch src/scss/main.scss:src/css/styles.css"
     },
+    "type": "module",
     "dependencies": {},
     "devDependencies": {}
 }
