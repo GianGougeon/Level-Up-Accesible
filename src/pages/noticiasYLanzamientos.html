@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Últimas noticias y lanzamientos sobre videojuegos accesibles: opciones para daltónicos, subtítulos configurables y más." />
+    <meta name="keywords" content="noticias gaming accesible, lanzamientos inclusivos, juegos para discapacitados, accesibilidad en videojuegos, novedades gaming inclusivo" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="./../css/styles.css" />
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Noticias y Lanzamientos Accesibles | Level-Up Accesible</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+       <nav class="navbar navbar-expand-lg navbar-dark py-3 background-primary" aria-label="Navegación principal">
+        <div class="container">
+            <!-- Marca / Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#" aria-label="Inicio - Level-Up Accesible">
+                <span class="me-2" aria-hidden="true">🎮</span>
+                <span>Level-Up Accesible</span>
+            </a>
+
+            <!-- Botón menú móvil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar u ocultar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link px-3 py-2 rounded " href="./../../index.html" aria-current="page">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link px-3 py-2 rounded active" href="../../src/pages/noticiasYLanzamientos.html">
+                            Noticias y lanzamientos
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link px-3 py-2 rounded" href="./consolasYperifericos.html">
+                            Consolas y periféricos
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link px-3 py-2 rounded" href="./comunidades.html">
+                            Comunidades
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link px-3 py-2 rounded" href="./recursos.html">
+                            Foro de ayuda
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link px-3 py-2 rounded" href="./contacto.html">
+                            Accesibilidad
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section hero d-flex align-items-center text-white position-relative overflow-hidden">
+            <img src="../assets/images/Noticias y Lanzamientos/hero jpg.jpg" 
+                 alt="Pantalla con noticias de videojuegos" 
+                 class="hero-img position-absolute w-100 h-100 object-fit-cover" />
+            <div class="container text-center py-5 position-relative z-1">
+                <h1 class="display-4 fw-bold mb-3">Noticias y Lanzamientos</h1>
+                <p class="lead lead-slogan mb-4">Mantente al día con los últimos avances en gaming accesible</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#ultimas-noticias" class="btn btn-primary btn-lg">Ver Novedades</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main id="main-content" class="py-5">
+        <!-- Sección de últimas noticias -->
+        <section id="ultimas-noticias" class="container mb-5" aria-labelledby="noticias-heading">
+            <h2 id="noticias-heading" class="text-center mb-4">Últimas Noticias</h2>
+            <div class="row g-4">
+                <!-- Noticia 1 - Modal -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover">
+                        <img src="../assets/images/Noticias y Lanzamientos/Noticia 1 Nuevo lanzamiento.avif" 
+                             class="card-img-top" 
+                             alt="Juego con modo daltonismo" 
+                             style="height: 180px; object-fit: cover" />
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Nuevo Lanzamiento</span>
+                            <h3 class="card-title h5">"Acessible Quest" añade modo para daltónicos</h3>
+                            <p class="card-text">El nuevo RPG incluye filtros de color personalizables y símbolos únicos para objetos.</p>
+                            <button class="btn btn-sm btn-outline-primary" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#noticia1">
+                                Ampliar información
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noticia 2 - Tooltip -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover">
+                        <img src="../assets/images/Noticias y Lanzamientos/Noticia2 Actualizacion.avif" 
+                             class="card-img-top" 
+                             alt="Control adaptativo" 
+                             style="height: 180px; object-fit: cover" />
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Actualización</span>
+                            <h3 class="card-title h5">PS5 mejora su menú de accesibilidad</h3>
+                            <p class="card-text">Sony añade navegación por voz y ajustes de contraste en su última actualización.</p>
+                            <button class="btn btn-sm btn-outline-primary" 
+                                    data-bs-toggle="tooltip" 
+                                    data-bs-placement="top" 
+                                    data-bs-title="Incluye soporte para 15 idiomas y perfiles personalizados">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noticia 3 - Modal -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 card-hover">
+                        <img src="../assets/images/Noticias y Lanzamientos/Noticia 3 proximamente.avif" 
+                             class="card-img-top" 
+                             alt="Juego con subtítulos" 
+                             style="height: 180px; object-fit: cover" />
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Próximamente</span>
+                            <h3 class="card-title h5">"Ocean Sounds" tendrá subtítulos descriptivos</h3>
+                            <p class="card-text">El juego indie incluirá descripciones de sonidos ambientales para jugadores sordos.</p>
+                            <button class="btn btn-sm btn-outline-primary" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#noticia3">
+                                Leer más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Otras noticias -->
+        <section class="container">
+            <h2 class="text-center mb-4">Más Noticias</h2>
+            <div class="row g-4">
+                <!-- Noticia 4 - Collapse -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h3 class="h5 mb-0">Nuevo estudio enfocado en accesibilidad</h3>
+                            <button class="btn btn-sm btn-primary" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#noticia4">
+                                <i class="fas fa-chevron-down" ></i>
+                                Ver detalles
+                            </button>
+                        </div>
+                        <div class="collapse" id="noticia4">
+                            <div class="card-body">
+                                <p>El estudio "Inclusive Games" anunció su primer proyecto: un juego de puzzles diseñado desde cero para jugadores con movilidad reducida.</p>
+                                <ul>
+                                    <li>Controles con un solo botón</li>
+                                    <li>Modo de tiempo ilimitado</li>
+                                    <li>Narrativa por audio descriptivo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noticia 5 - Popover -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Encuesta: 78% de jugadores usan opciones accesibles</h3>
+                            <p class="card-text">Un estudio revela que la mayoría de gamers activan al menos una configuración de accesibilidad.</p>
+                            <button class="btn btn-sm btn-outline-primary"
+                                    data-bs-toggle="popover"
+                                    data-bs-title="Datos clave"
+                                    data-bs-content="Subtítulos (62%), Modo daltonismo (34%), Controles remapeables (41%)">
+                                Ver estadísticas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modales -->
+    <!-- Modal Noticia 1 -->
+    <div class="modal fade" id="noticia1" tabindex="-1" aria-labelledby="noticia1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="noticia1Label">"Accessible Quest" - Modo Daltonismo</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1633613286848-e6f43bbafb8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         class="img-fluid mb-3" 
+                         alt="Modo daltonismo en juego" />
+                    <p>El RPG <strong>"Accessible Quest"</strong> ha lanzado una actualización que incluye:</p>
+                    <ul>
+                        <li>8 filtros de color para diferentes tipos de daltonismo</li>
+                        <li>Símbolos únicos para objetos importantes (además de color)</li>
+                        <li>Opciones para ajustar intensidad de efectos visuales</li>
+                    </ul>
+                    <p class="mb-0">Disponible ahora en PC, PlayStation y Xbox.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="#" class="btn btn-primary">Visitar sitio oficial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Noticia 3 -->
+    <div class="modal fade" id="noticia3" tabindex="-1" aria-labelledby="noticia3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="noticia3Label">Subtítulos descriptivos en "Ocean Sounds"</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>El juego indie de exploración submarina <strong>"Ocean Sounds"</strong> incluirá en su lanzamiento:</p>
+                    <ul>
+                        <li>Subtítulos con descripciones de sonidos ambientales (ej: "olas rompiendo suavemente")</li>
+                        <li>Opción para ajustar tamaño y color de texto</li>
+                        <li>Indicadores visuales de dirección de sonidos importantes</li>
+                    </ul>
+                    <p class="mb-0">Lanzamiento previsto: <strong>15 de diciembre 2023</strong>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="#" class="btn btn-primary">Añadir a wishlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h5 mb-3">Level-Up Accesible</h3>
+                    <p>Promoviendo la inclusión en el mundo del gaming desde 2025.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white" aria-label="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="h5 mb-3">Enlaces rápidos</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./../../index.html" class="text-white text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="./noticiasYlanzamientos.html" class="text-white text-decoration-none">Noticias y lanzamientos</a></li>
+                        <li class="mb-2"><a href="./consolasYperifericos.html" class="text-white text-decoration-none">Consolas y perifericos</a></li>
+                        <li class="mb-2"><a href="./comunidades.html" class="text-white text-decoration-none">Comunidades</a></li>
+                        <li class="mb-2"><a href="./recursos.html" class="text-white text-decoration-none">Foro de ayuda</a></li>
+                        <li class="mb-2"><a href="./accesibilidad.html" class="text-white text-decoration-none">Accesibilidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="h5 mb-3">Suscríbete</h3>
+                    <p>Recibe las últimas noticias y recursos sobre gaming accesible.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo" aria-label="Tu correo" aria-describedby="button-subscribe" />
+                            <button class="btn btn-primary asd" type="button" id="button-subscribe">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4" />
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Level-Up Accesible. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para interactividad -->
+    <script>
+        // Activar tooltips y popovers
+        document.addEventListener('DOMContentLoaded', function() {
+            const tooltips = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltips.map(t => new bootstrap.Tooltip(t));
+
+            const popovers = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            popovers.map(p => new bootstrap.Popover(p));
+
+            // Filtrado de noticias (ejemplo básico)
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    // Aquí iría la lógica para filtrar noticias
+                });
+            });
+        });
+    </script>
+</body>
+</html>
