@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+// Clase reutilizable
+.text-outline {
+    @include m.text-outline(v.$primary-color, 0.1px);
+}

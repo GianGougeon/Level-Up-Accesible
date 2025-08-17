@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as v;
 /* Mixins reutilizables */
 
+// Boton primario con hover
 @mixin btn {
     background-color: v.$primary-color !important;
     border: none !important;
@@ -8,3 +9,13 @@
         background-color: v.$secondary-color !important;
     }
 }
+
+// Mixin para borde en texto
+@mixin text-outline($color: black, $size: 1px) {
+    color: white;
+    text-shadow: -#{$size} -#{$size} 0 $color, #{$size} -#{$size} 0 $color, -#{$size} #{$size} 0 $color, #{$size} #{$size} 0 $color;
+
+    // soporte adicional
+    -webkit-text-stroke: $size $color;
+}
+

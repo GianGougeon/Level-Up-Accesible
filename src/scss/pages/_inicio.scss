@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/mixins" as m;
+
 .texto-primary {
     color: v.$primary-color;
 }
@@ -19,3 +20,8 @@
     }
 }
 
+#about {
+    a {
+        @include m.btn;
+    }
+}
