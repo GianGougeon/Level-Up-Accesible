@@ -12,8 +12,8 @@
 @use "./pages/noticiasYlanzamientos";
 @use "./pages/consolasYperifericos";
 @use "./pages/comunidades";
-// @use "./pages/foro";
-// @use "./pages/accesibilidad";
+@use "./pages/foro";
+@use "./pages/accesibilidad";
 /* components */
 @use "./components/header";
 @use "./components/footer";

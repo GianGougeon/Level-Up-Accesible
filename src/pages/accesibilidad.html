@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Detalles de accesibilidad en Level-Up Accesible: conoce las pautas WCAG implementadas para garantizar una experiencia inclusiva para todos los usuarios." />
+        <meta name="keywords" content="accesibilidad web, WCAG, gaming inclusivo, diseño accesible, navegación para discapacitados, contraste accesible" />
+        <link rel="stylesheet" href="./../css/styles.css" />
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <title>Accesibilidad | Level-Up Accesible</title>
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-dark py-3 background-primary">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="./../../index.html">
+                        <span class="me-2" aria-hidden="true">🎮</span>
+                        <span>Level-Up Accesible</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded" href="./../../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded" href="./noticiasYlanzamientos.html">Noticias y lanzamientos</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded" href="./consolasYperifericos.html">Consolas y periféricos</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded" href="./comunidades.html">Comunidades</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded" href="./foro.html">Foro de ayuda</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded active" href="./accesibilidad.html" aria-current="page">Accesibilidad</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="hero-section hero d-flex align-items-center text-white position-relative overflow-hidden">
+                <img src="https://blogs.iadb.org/igualdad/wp-content/uploads/sites/33/2023/05/accesibilidadmin-1-scaled.jpg" alt="Persona usando tecnología accesible con un switch adaptado" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
+                <div class="container text-center py-5 position-relative z-1">
+                    <h1 class="display-4 fw-bold mb-3">Accesibilidad</h1>
+                    <p class="lead lead-slogan mb-4">Comprometidos con una experiencia inclusiva para todos</p>
+                </div>
+            </section>
+        </header>
+
+        <main id="main-content" class="py-5">
+            <!-- Sección de introducción -->
+            <section class="container mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="mb-4">Nuestro compromiso con la accesibilidad</h2>
+                        <p>En Level-Up Accesible no solo hablamos de gaming inclusivo, lo practicamos en nuestro propio sitio web. Hemos implementado las pautas WCAG 2.1 AA para garantizar que todos los usuarios, independientemente de sus capacidades, puedan navegar y disfrutar de nuestro contenido.</p>
+                        <p>Este sitio ha sido diseñado y desarrollado siguiendo las mejores prácticas de accesibilidad web, con pruebas realizadas por usuarios con diversas discapacidades y con tecnologías asistivas.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./../assets/images/accesibilidad/accesibilidad.png" alt="Diversas personas usando tecnologías accesibles" class="img-fluid rounded shadow" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pestañas de características -->
+            <section class="container mb-5">
+                <h2 class="text-center mb-4">Principales características de accesibilidad</h2>
+
+                <ul class="nav nav-pills mb-4 justify-content-center" id="accesibilidad-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="navegacion-tab" data-bs-toggle="pill" data-bs-target="#navegacion" type="button" role="tab" aria-controls="navegacion" aria-selected="true"><i class="fas fa-sitemap me-2"></i>Navegación</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contenido-tab" data-bs-toggle="pill" data-bs-target="#contenido" type="button" role="tab" aria-controls="contenido" aria-selected="false"><i class="fas fa-file-alt me-2"></i>Contenido</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="visual-tab" data-bs-toggle="pill" data-bs-target="#visual" type="button" role="tab" aria-controls="visual" aria-selected="false"><i class="fas fa-eye me-2"></i>Visual</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="teclado-tab" data-bs-toggle="pill" data-bs-target="#teclado" type="button" role="tab" aria-controls="teclado" aria-selected="false"><i class="fas fa-keyboard me-2"></i>Teclado</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="accesibilidad-tabs-content">
+                    <!-- Pestaña Navegación -->
+                    <div class="tab-pane fade show active" id="navegacion" role="tabpanel" aria-labelledby="navegacion-tab">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-sitemap"></i>
+                                </div>
+                                <h3>Estructura semántica</h3>
+                                <p>Uso adecuado de encabezados (h1-h6), landmarks y roles ARIA para una navegación lógica.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 1.3.1</span>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 2.4.10</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-route"></i>
+                                </div>
+                                <h3>Navegación consistente</h3>
+                                <p>Menú de navegación repetido en todas las páginas con orden lógico y accesible por teclado.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 3.2.3</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-link"></i>
+                                </div>
+                                <h3>Enlaces descriptivos</h3>
+                                <p>Textos de enlace significativos fuera de contexto, evitando "clic aquí" o "leer más".</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 2.4.4</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bread-slice"></i>
+                                </div>
+                                <h3>Migas de pan</h3>
+                                <p>Ruta de navegación visible para orientar al usuario sobre su ubicación en el sitio.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 2.4.8</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pestaña Contenido -->
+                    <div class="tab-pane fade" id="contenido" role="tabpanel" aria-labelledby="contenido-tab">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-text-height"></i>
+                                </div>
+                                <h3>Texto legible</h3>
+                                <p>Contenido claro y simple, con opción de aumentar el tamaño del texto sin pérdida de funcionalidad.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 1.4.4</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-comment-alt"></i>
+                                </div>
+                                <h3>Texto alternativo</h3>
+                                <p>Imágenes con descripciones precisas, decorativas marcadas como tales para lectores de pantalla.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 1.1.1</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <h3>Multimedia accesible</h3>
+                                <p>Videos con subtítulos, transcripciones y descripción de audio cuando es necesario.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 1.2.2</span>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 1.2.3</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-table"></i>
+                                </div>
+                                <h3>Tablas accesibles</h3>
+                                <p>Tablas con encabezados identificados correctamente para una interpretación adecuada.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 1.3.1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pestaña Visual -->
+                    <div class="tab-pane fade" id="visual" role="tabpanel" aria-labelledby="visual-tab">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-adjust"></i>
+                                </div>
+                                <h3>Contraste adecuado</h3>
+                                <p>Relación de contraste mínimo de 4.5:1 para texto normal y 3:1 para texto grande.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 1.4.3</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h3>Independencia del color</h3>
+                                <p>La información no se transmite solo mediante color, usando también texto o patrones.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 1.4.1</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-text-width"></i>
+                                </div>
+                                <h3>Redimensión de texto</h3>
+                                <p>El texto puede ser ampliado hasta un 200% sin pérdida de contenido o funcionalidad.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 1.4.4</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                                <h3>Modo de alto contraste</h3>
+                                <p>Opción para activar un esquema de colores de alto contraste para mejor legibilidad.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 1.4.6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pestaña Teclado -->
+                    <div class="tab-pane fade" id="teclado" role="tabpanel" aria-labelledby="teclado-tab">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-keyboard"></i>
+                                </div>
+                                <h3>Navegación por teclado</h3>
+                                <p>Toda la funcionalidad está disponible usando solo el teclado, sin trampas de teclado.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 2.1.1</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mouse-pointer"></i>
+                                </div>
+                                <h3>Foco visible</h3>
+                                <p>Indicador claro del elemento con foco durante la navegación por teclado.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 2.4.7</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-skip-forward"></i>
+                                </div>
+                                <h3>Saltar al contenido</h3>
+                                <p>Enlace oculto visible al navegar con teclado para saltar bloques repetitivos.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 2.4.1</span>
+                            </div>
+                            <div class="col-md-6 col-lg-3 text-center">
+                                <div class="feature-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h3>Manejo de errores</h3>
+                                <p>Formularios con validación accesible y sugerencias para corregir errores.</p>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 3.3.1</span>
+                                <span class="badge bg-primary-color wcag-badge">WCAG 3.3.3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tabla detallada de accesibilidad -->
+            <section class="container mb-5">
+                <h2 class="text-center mb-4">Detalle de implementación WCAG 2.1</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover table-accessibility">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Principio</th>
+                                <th scope="col">Pauta WCAG</th>
+                                <th scope="col">Nivel</th>
+                                <th scope="col">Implementación en este sitio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Perceptible -->
+                            <tr class="table-primary">
+                                <th rowspan="6" scope="rowgroup" class="align-middle">Perceptible</th>
+                                <td>1.1.1 Contenido no textual</td>
+                                <td>A</td>
+                                <td>Texto alternativo para imágenes, iconos decorativos ocultos para lectores de pantalla</td>
+                            </tr>
+                            <tr>
+                                <td>1.2.1 Sólo audio y sólo video (pregrabado)</td>
+                                <td>A</td>
+                                <td>Transcripciones para contenido de audio, descripciones para video</td>
+                            </tr>
+                            <tr>
+                                <td>1.3.1 Información y relaciones</td>
+                                <td>A</td>
+                                <td>Estructura semántica HTML5, encabezados jerárquicos, landmarks ARIA</td>
+                            </tr>
+                            <tr>
+                                <td>1.4.1 Uso del color</td>
+                                <td>A</td>
+                                <td>La información no se transmite solo con color (ej. enlaces subrayados)</td>
+                            </tr>
+                            <tr>
+                                <td>1.4.3 Contraste (mínimo)</td>
+                                <td>AA</td>
+                                <td>Relación de contraste ≥4.5:1 para texto normal, ≥3:1 para texto grande</td>
+                            </tr>
+                            <tr>
+                                <td>1.4.4 Redimensión del texto</td>
+                                <td>AA</td>
+                                <td>Texto redimensionable hasta 200% sin pérdida de funcionalidad</td>
+                            </tr>
+
+                            <!-- Operable -->
+                            <tr class="table-primary">
+                                <th rowspan="5" scope="rowgroup" class="align-middle">Operable</th>
+                                <td>2.1.1 Teclado</td>
+                                <td>A</td>
+                                <td>Toda la funcionalidad accesible mediante teclado</td>
+                            </tr>
+                            <tr>
+                                <td>2.4.1 Bloques de omisión</td>
+                                <td>A</td>
+                                <td>Enlace "Saltar al contenido" disponible para navegación por teclado</td>
+                            </tr>
+                            <tr>
+                                <td>2.4.3 Orden del foco</td>
+                                <td>A</td>
+                                <td>Orden lógico de tabulación que preserva las relaciones significativas</td>
+                            </tr>
+                            <tr>
+                                <td>2.4.4 Propósito de los enlaces (en contexto)</td>
+                                <td>A</td>
+                                <td>Textos de enlace descriptivos fuera de contexto</td>
+                            </tr>
+                            <tr>
+                                <td>2.4.7 Foco visible</td>
+                                <td>AA</td>
+                                <td>Indicador de foco claro con alto contraste en todos los elementos interactivos</td>
+                            </tr>
+
+                            <!-- Comprensible -->
+                            <tr class="table-primary">
+                                <th rowspan="3" scope="rowgroup" class="align-middle">Comprensible</th>
+                                <td>3.1.1 Idioma de la página</td>
+                                <td>A</td>
+                                <td>Atributo lang="es" en el elemento html</td>
+                            </tr>
+                            <tr>
+                                <td>3.2.3 Navegación consistente</td>
+                                <td>AA</td>
+                                <td>Estructura de navegación consistente en todas las páginas</td>
+                            </tr>
+                            <tr>
+                                <td>3.3.1 Identificación de errores</td>
+                                <td>A</td>
+                                <td>Mensajes de error claros con sugerencias para corrección</td>
+                            </tr>
+
+                            <!-- Robusto -->
+                            <tr class="table-primary">
+                                <th rowspan="2" scope="rowgroup" class="align-middle">Robusto</th>
+                                <td>4.1.1 Procesamiento</td>
+                                <td>A</td>
+                                <td>HTML válido, sin errores de sintaxis que afecten la interpretación</td>
+                            </tr>
+                            <tr>
+                                <td>4.1.2 Nombre, función, valor</td>
+                                <td>A</td>
+                                <td>Componentes con nombres accesibles, estados y propiedades definidos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Sección de tecnologías asistivas -->
+            <section class="container bg-light p-5 rounded-3 mb-5">
+                <h2 class="text-center mb-4">Tecnologías asistivas compatibles</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-assistive-listening-systems fa-3x mb-3"></i>
+                                <h3 class="h5">Lectores de pantalla</h3>
+                                <p>Probado con:</p>
+                                <ul class="list-unstyled">
+                                    <li>NVDA (Windows)</li>
+                                    <li>VoiceOver (Mac/iOS)</li>
+                                    <li>TalkBack (Android)</li>
+                                    <li>JAWS (Windows)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-keyboard fa-3x mb-3"></i>
+                                <h3 class="h5">Navegación por teclado</h3>
+                                <p>Compatible con:</p>
+                                <ul class="list-unstyled">
+                                    <li>Teclado físico</li>
+                                    <li>Teclado en pantalla</li>
+                                    <li>Conmutadores</li>
+                                    <li>Dispositivos de entrada alternativos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-magic fa-3x mb-3"></i>
+                                <h3 class="h5">Herramientas de adaptación</h3>
+                                <p>Optimizado para:</p>
+                                <ul class="list-unstyled">
+                                    <li>Lupas de pantalla</li>
+                                    <li>Modo alto contraste</li>
+                                    <li>Software de reconocimiento de voz</li>
+                                    <li>Herramientas de dictado</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de feedback -->
+            <section class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-4">¿Encontraste algún problema de accesibilidad?</h2>
+                        <p class="lead mb-4">Nos esforzamos por mejorar continuamente. Si encuentras alguna barrera en nuestro sitio, por favor háznoslo saber.</p>
+                        <a href="./foro.html" class="btn btn-primary btn-lg px-4">Reportar problema</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-5 footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h3 class="h5 mb-3">Level-Up Accesible</h3>
+                        <p>Promoviendo la inclusión en el mundo del gaming desde 2025.</p>
+                        <div class="d-flex gap-3 mt-4">
+                            <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                            <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="#" class="text-white" aria-label="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h3 class="h5 mb-3">Enlaces rápidos</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="./../../index.html" class="text-white text-decoration-none">Inicio</a></li>
+                            <li class="mb-2"><a href="./noticiasYlanzamientos.html" class="text-white text-decoration-none">Noticias y lanzamientos</a></li>
+                            <li class="mb-2"><a href="./consolasYperifericos.html" class="text-white text-decoration-none">Consolas y periféricos</a></li>
+                            <li class="mb-2"><a href="./comunidades.html" class="text-white text-decoration-none">Comunidades</a></li>
+                            <li class="mb-2"><a href="./foro.html" class="text-white text-decoration-none">Foro de ayuda</a></li>
+                            <li class="mb-2"><a href="./accesibilidad.html" class="text-white text-decoration-none">Accesibilidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="h5 mb-3">Suscríbete</h3>
+                        <p>Recibe las últimas noticias y recursos sobre gaming accesible.</p>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Tu correo" aria-label="Tu correo" aria-describedby="button-subscribe" />
+                                <button class="btn btn-primary" type="button" id="button-subscribe">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2025 Level-Up Accesible. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

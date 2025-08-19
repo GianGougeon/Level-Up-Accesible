@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Foro de ayuda de Level-Up Accesible: deja tus consultas, sugerencias y comparte experiencias sobre gaming accesible." />
+        <meta name="keywords" content="foro gaming accesible, ayuda videojuegos inclusivos, consultas accesibilidad, soporte gaming discapacidad, preguntas frecuentes gaming" />
+        <link rel="stylesheet" href="./../css/styles.css" />
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <!-- JS -->
+        <script src="./../js/app.js" type="module" defer></script>
+        <title>Foro de Ayuda | Level-Up Accesible</title>
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-dark py-3 background-primary">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="./../../index.html">
+                        <span class="me-2" aria-hidden="true">🎮</span>
+                        <span>Level-Up Accesible</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded" href="./../../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded" href="./noticiasYlanzamientos.html">Noticias y lanzamientos</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded" href="./consolasYperifericos.html">Consolas y periféricos</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded" href="./comunidades.html">Comunidades</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded active" href="./foro.html" aria-current="page">Foro de ayuda</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link px-3 py-2 rounded" href="./accesibilidad.html">Accesibilidad</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="hero-section hero d-flex align-items-center text-white position-relative overflow-hidden">
+                <img src="https://innovacion.uas.edu.mx/wp-content/uploads/2024/11/Principales-innovaciones-en-tecnologia-para-TI-scaled-1.webp" alt="Persona usando computadora con símbolos de ayuda y preguntas" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
+                <div class="container text-center py-5 position-relative z-1">
+                    <h1 class="display-4 fw-bold mb-3">Foro de Ayuda</h1>
+                    <p class="lead lead-slogan mb-4 text-outline">Resuelve tus dudas y comparte tus experiencias con la comunidad</p>
+                </div>
+            </section>
+        </header>
+
+        <main id="main-content" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Formulario de ayuda -->
+                    <section class="col-lg-8 mx-auto form-section mb-5">
+                        <h2 class="text-center mb-4">Formulario de Ayuda</h2>
+                        <p class="text-center mb-4">Completa este formulario para enviar tus consultas, sugerencias o reportar problemas. Todos los campos marcados con <span class="text-danger">*</span> son obligatorios.</p>
+                        
+                        <form id="formularioAyuda" class="needs-validation" novalidate>
+                            <!-- Tipo de consulta -->
+                            <div class="mb-4">
+                                <label for="tipoConsulta" class="form-label required-field">Tipo de consulta</label>
+                                <select class="form-select" id="tipoConsulta" name="tipoConsulta" required>
+                                    <option value="" selected disabled>Selecciona una opción</option>
+                                    <option value="consola">Consulta sobre consolas</option>
+                                    <option value="periferico">Consulta sobre periféricos</option>
+                                    <option value="juego">Consulta sobre juegos</option>
+                                    <option value="accesibilidad">Problema de accesibilidad</option>
+                                    <option value="sugerencia">Sugerencia para el sitio</option>
+                                    <option value="otro">Otro tipo de consulta</option>
+                                </select>
+                                <div class="invalid-feedback">Por favor selecciona un tipo de consulta.</div>
+                            </div>
+    
+                            <!-- Información personal -->
+                            <fieldset class="mb-4">
+                                <legend class="h5">Información personal</legend>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="nombre" class="form-label required-field">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3">
+                                        <div class="invalid-feedback">Por favor ingresa tu nombre (mínimo 3 caracteres).</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="apellido" class="form-label">Apellido</label>
+                                        <input type="text" class="form-control" id="apellido" name="apellido">
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label required-field">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{9,15}">
+                                    <div class="invalid-feedback">Por favor ingresa un número de teléfono válido (solo números, 9-15 dígitos).</div>
+                                </div>
+                            </fieldset>
+    
+                            <!-- Detalles de la consulta -->
+                            <fieldset class="mb-4">
+                                <legend class="h5">Detalles de tu consulta</legend>
+                                
+                                <div class="mb-3">
+                                    <label for="asunto" class="form-label required-field">Asunto</label>
+                                    <input type="text" class="form-control" id="asunto" name="asunto" required minlength="10" maxlength="100">
+                                    <div class="invalid-feedback">Por favor ingresa un asunto (entre 10 y 100 caracteres).</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="descripcion" class="form-label required-field">Descripción detallada</label>
+                                    <textarea class="form-control" id="descripcion" name="descripcion" rows="5" required minlength="20" maxlength="1000"></textarea>
+                                    <div class="invalid-feedback">Por favor ingresa una descripción detallada (entre 20 y 1000 caracteres).</div>
+                                    <div class="form-text">Describe tu consulta o problema con el mayor detalle posible.</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="fechaProblema" class="form-label">Fecha en que ocurrió el problema (si aplica)</label>
+                                    <input type="date" class="form-control" id="fechaProblema" name="fechaProblema" max="">
+                                    <div class="invalid-feedback">La fecha no puede ser futura.</div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">¿Cómo prefieres que te contactemos?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="contactoPreferido" id="contactoEmail" value="email" checked>
+                                        <label class="form-check-label" for="contactoEmail">Correo electrónico</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="contactoPreferido" id="contactoTelefono" value="telefono">
+                                        <label class="form-check-label" for="contactoTelefono">Teléfono</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="contactoPreferido" id="contactoForo" value="foro">
+                                        <label class="form-check-label" for="contactoForo">Respuesta en el foro</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+    
+                            <!-- Información adicional -->
+                            <fieldset class="mb-4">
+                                <legend class="h5">Información adicional</legend>
+                                
+                                <div class="mb-3">
+                                    <label class="form-label">Plataforma(s) relacionada(s) con tu consulta</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="plataformaPc" name="plataforma" value="PC">
+                                        <label class="form-check-label" for="plataformaPc">PC</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="plataformaXbox" name="plataforma" value="Xbox">
+                                        <label class="form-check-label" for="plataformaXbox">Xbox</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="plataformaPlaystation" name="plataforma" value="PlayStation">
+                                        <label class="form-check-label" for="plataformaPlaystation">PlayStation</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="plataformaNintendo" name="plataforma" value="Nintendo">
+                                        <label class="form-check-label" for="plataformaNintendo">Nintendo Switch</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="plataformaMovil" name="plataforma" value="Móvil">
+                                        <label class="form-check-label" for="plataformaMovil">Dispositivos móviles</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="nivelExperiencia" class="form-label">Nivel de experiencia con gaming accesible</label>
+                                    <select class="form-select" id="nivelExperiencia" name="nivelExperiencia">
+                                        <option value="" selected disabled>Selecciona una opción</option>
+                                        <option value="principiante">Principiante - Recién comienzo</option>
+                                        <option value="intermedio">Intermedio - Alguna experiencia</option>
+                                        <option value="avanzado">Avanzado - Mucha experiencia</option>
+                                        <option value="experto">Experto - Ayudo a otros</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="adjunto" class="form-label">Adjuntar archivo (opcional)</label>
+                                    <input class="form-control" type="file" id="adjunto" name="adjunto" accept="image/*,.pdf,.doc,.docx">
+                                    <div class="form-text">Puedes adjuntar capturas de pantalla o documentos relacionados (max 5MB).</div>
+                                </div>
+                            </fieldset>
+    
+                            <!-- Términos y envío -->
+                            <div class="mb-4 form-check">
+                                <input class="form-check-input" type="checkbox" id="aceptoTerminos" name="aceptoTerminos" required>
+                                <label class="form-check-label" for="aceptoTerminos">Acepto los <a href="#" data-bs-toggle="modal" data-bs-target="#terminosModal">términos y condiciones</a> y la <a href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal">política de privacidad</a></label>
+                                <div class="invalid-feedback">Debes aceptar los términos y condiciones para enviar el formulario.</div>
+                            </div>
+                            
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <button type="reset" class="btn btn-secondary me-md-2">Limpiar formulario</button>
+                                <button type="submit" class="btn btn-primary">Enviar consulta</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-5 footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h3 class="h5 mb-3">Level-Up Accesible</h3>
+                        <p>Promoviendo la inclusión en el mundo del gaming desde 2025.</p>
+                        <div class="d-flex gap-3 mt-4">
+                            <a href="#" class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a href="#" class="text-white" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                            <a href="#" class="text-white" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                            <a href="#" class="text-white" aria-label="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <h3 class="h5 mb-3">Enlaces rápidos</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="./../../index.html" class="text-white text-decoration-none">Inicio</a></li>
+                            <li class="mb-2"><a href="./noticiasYlanzamientos.html" class="text-white text-decoration-none">Noticias y lanzamientos</a></li>
+                            <li class="mb-2"><a href="./consolasYperifericos.html" class="text-white text-decoration-none">Consolas y periféricos</a></li>
+                            <li class="mb-2"><a href="./comunidades.html" class="text-white text-decoration-none">Comunidades</a></li>
+                            <li class="mb-2"><a href="./foro.html" class="text-white text-decoration-none">Foro de ayuda</a></li>
+                            <li class="mb-2"><a href="./accesibilidad.html" class="text-white text-decoration-none">Accesibilidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="h5 mb-3">Suscríbete</h3>
+                        <p>Recibe las últimas noticias y recursos sobre gaming accesible.</p>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Tu correo" aria-label="Tu correo" aria-describedby="button-subscribe" />
+                                <button class="btn btn-primary" type="button" id="button-subscribe">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr class="my-4" />
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2025 Level-Up Accesible. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal Términos y Condiciones -->
+        <div class="modal fade" id="terminosModal" tabindex="-1" aria-labelledby="terminosModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="terminosModalLabel">Términos y Condiciones</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Al enviar tu consulta a través de este formulario, aceptas que:</p>
+                        <ol>
+                            <li>La información proporcionada es veraz y precisa.</li>
+                            <li>Tu consulta puede ser publicada de forma anónima en nuestro foro para ayudar a otros usuarios.</li>
+                            <li>Nos reservamos el derecho de editar o rechazar contenido inapropiado.</li>
+                            <li>No compartiremos tu información personal con terceros sin tu consentimiento.</li>
+                            <li>Puedes solicitar la eliminación de tu consulta en cualquier momento.</li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Política de Privacidad -->
+        <div class="modal fade" id="privacidadModal" tabindex="-1" aria-labelledby="privacidadModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="privacidadModalLabel">Política de Privacidad</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>En Level-Up Accesible nos comprometemos a proteger tu privacidad:</p>
+                        <ul>
+                            <li>Utilizamos tu información solo para responder a tu consulta y mejorar nuestros servicios.</li>
+                            <li>No vendemos ni compartimos tu información con fines comerciales.</li>
+                            <li>Implementamos medidas de seguridad para proteger tus datos personales.</li>
+                            <li>Puedes solicitar acceso, rectificación o eliminación de tus datos en cualquier momento.</li>
+                            <li>Usamos cookies para mejorar la experiencia del usuario, pero puedes desactivarlas en tu navegador.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

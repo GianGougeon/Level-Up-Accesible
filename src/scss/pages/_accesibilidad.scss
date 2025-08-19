@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #6c757d;
+}
+
+.wcag-badge {
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.table-accessibility {
+    th {
+        background-color: #f8f9fa;
+    }
+}
+
+.nav-pills {
+    .nav-link {
+        background-color: v.$primary-color;
+        color: white;
+        margin: 0.25rem;
+        &.active {
+            background-color: #6c757d;
+        }
+        &:hover {
+            background-color: v.$secondary-color;
+            color: white;
+        }
+    }
+}
+.bg-primary-color {
+    background-color: v.$primary-color !important;
+    color: white;
+}
