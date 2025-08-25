@@ -21,7 +21,7 @@
         <header>
             <nav class="navbar navbar-expand-xl navbar-dark py-3 background-primary">
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="./../../index.html">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
                         <span class="me-2" aria-hidden="true">🎮</span>
                         <span>Level-Up Accesible</span>
                     </a>
@@ -69,7 +69,7 @@
                     <!-- Formulario de ayuda -->
                     <section class="col-lg-8 mx-auto form-section mb-5">
                         <h2 class="text-center mb-4">Formulario de Ayuda</h2>
-                        <p class="text-center mb-4">Completa este formulario para enviar tus consultas, sugerencias o reportar problemas. Todos los campos marcados con <span class="text-danger">*</span> son obligatorios.</p>
+                        <p class="text-center mb-4 ">Completa este formulario para enviar tus consultas, sugerencias o reportar problemas. Todos los campos marcados con <span class="fw-bold">*</span> son obligatorios.</p>
                         
                         <form id="formularioAyuda" class="needs-validation" novalidate>
                             <!-- Tipo de consulta -->
@@ -140,7 +140,7 @@
                                 </div>
                                 
                                 <div class="mb-3">
-                                    <label class="form-label">¿Cómo prefieres que te contactemos?</label>
+                                    <legend class="form-label">¿Cómo prefieres que te contactemos?</legend>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="contactoPreferido" id="contactoEmail" value="email" checked>
                                         <label class="form-check-label" for="contactoEmail">Correo electrónico</label>
@@ -161,7 +161,7 @@
                                 <legend class="h5">Información adicional</legend>
                                 
                                 <div class="mb-3">
-                                    <label class="form-label">Plataforma(s) relacionada(s) con tu consulta</label>
+                                    <legend class="form-label">Plataforma(s) relacionada(s) con tu consulta</legend>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="plataformaPc" name="plataforma" value="PC">
                                         <label class="form-check-label" for="plataformaPc">PC</label>
@@ -205,7 +205,7 @@
                             <!-- Términos y envío -->
                             <div class="mb-4 form-check">
                                 <input class="form-check-input" type="checkbox" id="aceptoTerminos" name="aceptoTerminos" required>
-                                <label class="form-check-label" for="aceptoTerminos">Acepto los <a href="#" data-bs-toggle="modal" data-bs-target="#terminosModal">términos y condiciones</a> y la <a href="#" data-bs-toggle="modal" data-bs-target="#privacidadModal">política de privacidad</a></label>
+                                <label class="form-check-label" for="aceptoTerminos">Acepto los <a href="#" class="text-dark fw-semibold" data-bs-toggle="modal" data-bs-target="#terminosModal">términos y condiciones</a> y la <a href="#" class="text-dark fw-semibold" data-bs-toggle="modal" data-bs-target="#privacidadModal">política de privacidad</a></label>
                                 <div class="invalid-feedback">Debes aceptar los términos y condiciones para enviar el formulario.</div>
                             </div>
                             
