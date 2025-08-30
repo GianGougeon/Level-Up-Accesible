@@ -21,10 +21,10 @@
         <header>
             <nav class="navbar navbar-expand-xl navbar-dark py-3 background-primary">
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
+                    <div class="navbar-brand d-flex align-items-center" href="#">
                         <span class="me-2" aria-hidden="true">🎮</span>
                         <span>Level-Up Accesible</span>
-                    </a>
+                    </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -45,8 +45,12 @@
                             <li class="nav-item mx-1">
                                 <a class="nav-link px-3 py-2 rounded active" href="./foro.html" aria-current="page">Foro de ayuda</a>
                             </li>
-                            <li class="nav-item mx-1">
-                                <a class="nav-link px-3 py-2 rounded" href="./accesibilidad.html">Accesibilidad</a>
+                            <li class="nav-item dropdown dropdown-accesibilidad mx-1">
+                                <button class="nav-link dropdown-toggle px-3 py-2 rounded" href="#" id="accesibilidadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accesibilidad</button>
+                                <ul class="dropdown-menu" aria-labelledby="accesibilidadDropdown">
+                                    <li><a class="dropdown-item" href="./accesibilidad.html">Accesibilidad General</a></li>
+                                    <li><a class="dropdown-item active" href="./xboxAdaptativeController.html">Xbox Adaptive Controller</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -55,7 +59,7 @@
 
             <!-- Hero Section -->
             <section class="hero-section hero d-flex align-items-center text-white position-relative overflow-hidden">
-                <img src="https://innovacion.uas.edu.mx/wp-content/uploads/2024/11/Principales-innovaciones-en-tecnologia-para-TI-scaled-1.webp" alt="Persona usando computadora con símbolos de ayuda y preguntas" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
+                <img src="././../assets/images/foro/foro.webp" alt="Persona usando computadora con símbolos de ayuda y preguntas" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
                 <div class="container text-center py-5 position-relative z-1">
                     <h1 class="display-4 fw-bold mb-3">Foro de Ayuda</h1>
                     <p class="lead lead-slogan mb-4 text-outline">Resuelve tus dudas y comparte tus experiencias con la comunidad</p>
@@ -69,8 +73,8 @@
                     <!-- Formulario de ayuda -->
                     <section class="col-lg-8 mx-auto form-section mb-5">
                         <h2 class="text-center mb-4">Formulario de Ayuda</h2>
-                        <p class="text-center mb-4 ">Completa este formulario para enviar tus consultas, sugerencias o reportar problemas. Todos los campos marcados con <span class="fw-bold">*</span> son obligatorios.</p>
-                        
+                        <p class="text-center mb-4">Completa este formulario para enviar tus consultas, sugerencias o reportar problemas. Todos los campos marcados con <span class="fw-bold">*</span> son obligatorios.</p>
+
                         <form id="formularioAyuda" class="needs-validation" novalidate>
                             <!-- Tipo de consulta -->
                             <div class="mb-4">
@@ -86,104 +90,104 @@
                                 </select>
                                 <div class="invalid-feedback">Por favor selecciona un tipo de consulta.</div>
                             </div>
-    
+
                             <!-- Información personal -->
                             <fieldset class="mb-4">
                                 <legend class="h5">Información personal</legend>
-                                
+
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label for="nombre" class="form-label required-field">Nombre</label>
-                                        <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3">
+                                        <input type="text" class="form-control" id="nombre" name="nombre" required minlength="3" />
                                         <div class="invalid-feedback">Por favor ingresa tu nombre (mínimo 3 caracteres).</div>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label for="apellido" class="form-label">Apellido</label>
-                                        <input type="text" class="form-control" id="apellido" name="apellido">
+                                        <input type="text" class="form-control" id="apellido" name="apellido" />
                                     </div>
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <label for="email" class="form-label required-field">Correo electrónico</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <input type="email" class="form-control" id="email" name="email" required />
                                     <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <label for="telefono" class="form-label">Teléfono (opcional)</label>
-                                    <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{9,15}">
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{9,15}" />
                                     <div class="invalid-feedback">Por favor ingresa un número de teléfono válido (solo números, 9-15 dígitos).</div>
                                 </div>
                             </fieldset>
-    
+
                             <!-- Detalles de la consulta -->
                             <fieldset class="mb-4">
                                 <legend class="h5">Detalles de tu consulta</legend>
-                                
+
                                 <div class="mb-3">
                                     <label for="asunto" class="form-label required-field">Asunto</label>
-                                    <input type="text" class="form-control" id="asunto" name="asunto" required minlength="10" maxlength="100">
+                                    <input type="text" class="form-control" id="asunto" name="asunto" required minlength="10" maxlength="100" />
                                     <div class="invalid-feedback">Por favor ingresa un asunto (entre 10 y 100 caracteres).</div>
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <label for="descripcion" class="form-label required-field">Descripción detallada</label>
                                     <textarea class="form-control" id="descripcion" name="descripcion" rows="5" required minlength="20" maxlength="1000"></textarea>
                                     <div class="invalid-feedback">Por favor ingresa una descripción detallada (entre 20 y 1000 caracteres).</div>
                                     <div class="form-text">Describe tu consulta o problema con el mayor detalle posible.</div>
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <label for="fechaProblema" class="form-label">Fecha en que ocurrió el problema (si aplica)</label>
-                                    <input type="date" class="form-control" id="fechaProblema" name="fechaProblema" max="">
+                                    <input type="date" class="form-control" id="fechaProblema" name="fechaProblema" max="" />
                                     <div class="invalid-feedback">La fecha no puede ser futura.</div>
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <legend class="form-label">¿Cómo prefieres que te contactemos?</legend>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="contactoPreferido" id="contactoEmail" value="email" checked>
+                                        <input class="form-check-input" type="radio" name="contactoPreferido" id="contactoEmail" value="email" checked />
                                         <label class="form-check-label" for="contactoEmail">Correo electrónico</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="contactoPreferido" id="contactoTelefono" value="telefono">
+                                        <input class="form-check-input" type="radio" name="contactoPreferido" id="contactoTelefono" value="telefono" />
                                         <label class="form-check-label" for="contactoTelefono">Teléfono</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="contactoPreferido" id="contactoForo" value="foro">
+                                        <input class="form-check-input" type="radio" name="contactoPreferido" id="contactoForo" value="foro" />
                                         <label class="form-check-label" for="contactoForo">Respuesta en el foro</label>
                                     </div>
                                 </div>
                             </fieldset>
-    
+
                             <!-- Información adicional -->
                             <fieldset class="mb-4">
                                 <legend class="h5">Información adicional</legend>
-                                
+
                                 <div class="mb-3">
                                     <legend class="form-label">Plataforma(s) relacionada(s) con tu consulta</legend>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="plataformaPc" name="plataforma" value="PC">
+                                        <input class="form-check-input" type="checkbox" id="plataformaPc" name="plataforma" value="PC" />
                                         <label class="form-check-label" for="plataformaPc">PC</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="plataformaXbox" name="plataforma" value="Xbox">
+                                        <input class="form-check-input" type="checkbox" id="plataformaXbox" name="plataforma" value="Xbox" />
                                         <label class="form-check-label" for="plataformaXbox">Xbox</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="plataformaPlaystation" name="plataforma" value="PlayStation">
+                                        <input class="form-check-input" type="checkbox" id="plataformaPlaystation" name="plataforma" value="PlayStation" />
                                         <label class="form-check-label" for="plataformaPlaystation">PlayStation</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="plataformaNintendo" name="plataforma" value="Nintendo">
+                                        <input class="form-check-input" type="checkbox" id="plataformaNintendo" name="plataforma" value="Nintendo" />
                                         <label class="form-check-label" for="plataformaNintendo">Nintendo Switch</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="plataformaMovil" name="plataforma" value="Móvil">
+                                        <input class="form-check-input" type="checkbox" id="plataformaMovil" name="plataforma" value="Móvil" />
                                         <label class="form-check-label" for="plataformaMovil">Dispositivos móviles</label>
                                     </div>
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <label for="nivelExperiencia" class="form-label">Nivel de experiencia con gaming accesible</label>
                                     <select class="form-select" id="nivelExperiencia" name="nivelExperiencia">
@@ -194,21 +198,21 @@
                                         <option value="experto">Experto - Ayudo a otros</option>
                                     </select>
                                 </div>
-                                
+
                                 <div class="mb-3">
                                     <label for="adjunto" class="form-label">Adjuntar archivo (opcional)</label>
-                                    <input class="form-control" type="file" id="adjunto" name="adjunto" accept="image/*,.pdf,.doc,.docx">
+                                    <input class="form-control" type="file" id="adjunto" name="adjunto" accept="image/*,.pdf,.doc,.docx" />
                                     <div class="form-text">Puedes adjuntar capturas de pantalla o documentos relacionados (max 5MB).</div>
                                 </div>
                             </fieldset>
-    
+
                             <!-- Términos y envío -->
                             <div class="mb-4 form-check">
-                                <input class="form-check-input" type="checkbox" id="aceptoTerminos" name="aceptoTerminos" required>
+                                <input class="form-check-input" type="checkbox" id="aceptoTerminos" name="aceptoTerminos" required />
                                 <label class="form-check-label" for="aceptoTerminos">Acepto los <a href="#" class="text-dark fw-semibold" data-bs-toggle="modal" data-bs-target="#terminosModal">términos y condiciones</a> y la <a href="#" class="text-dark fw-semibold" data-bs-toggle="modal" data-bs-target="#privacidadModal">política de privacidad</a></label>
                                 <div class="invalid-feedback">Debes aceptar los términos y condiciones para enviar el formulario.</div>
                             </div>
-                            
+
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                 <button type="reset" class="btn btn-secondary me-md-2">Limpiar formulario</button>
                                 <button type="submit" class="btn btn-primary">Enviar consulta</button>

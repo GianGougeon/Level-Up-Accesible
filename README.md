@@ -24,6 +24,7 @@ Level-Up Accesible es una **comunidad virtual** dedicada a brindar información 
 ✅ **Modos de visualización**: Alto contraste y tamaño de texto ajustable  
 ✅ **Multimedia accesible**: Subtítulos y transcripciones para contenido audiovisual  
 ✅ **Formularios inclusivos**: Validación accesible y etiquetas ARIA  
+✅ **Cobertura de hardware inclusivo**: Información detallada del Xbox Adaptive Controller y sus accesorios compatibles
 
 ## 🧪 Tecnologías utilizadas
 
@@ -59,11 +60,13 @@ Proyecto/
 │   │   ├── fonts/
 │   │   ├── icons/
 │   │   └── images/
-│   │       ├── Noticias y Lanzamientos/
-│   │       ├── accesibilidad/
+│   │       ├── inicio/
+│   │       ├── noticiasYlanzamientos/
+│   │       ├── consolasYperifericos/
 │   │       ├── comunidades/
 │   │       ├── foro/
-│   │       └── logos/
+│   │       ├── accesibilidad/
+│   │       └── xboxAdaptativeController/
 │   ├── css/
 │   │   ├── styles.css
 │   │   └── styles.css.map
@@ -80,7 +83,8 @@ Proyecto/
 │   │   ├── comunidades.html
 │   │   ├── consolasYperifericos.html
 │   │   ├── foro.html
-│   │   └── noticiasYLanzamientos.html
+│   │   ├── noticiasYlanzamientos.html
+│   │   └── xboxAdaptativeController.html
 │   └── scss/
 │       ├── abstracts/
 │       │   ├── _accessibility.scss
@@ -116,6 +120,7 @@ Proyecto/
 - **Textos alternativos**: Todas las imágenes tienen descripciones adecuadas
 - **Roles ARIA**: Uso correcto de landmarks, alerts y live regions
 - **Validación de formularios**: Mensajes de error accesibles
+- **Accesibilidad en hardware**: Se incluye documentación completa del Xbox Adaptive Controller y sus accesorios compatibles
 
 ### Pruebas realizadas
 - Lectores de pantalla: NVDA, JAWS, VoiceOver
@@ -164,11 +169,15 @@ Puedes ver el proyecto funcionando en:
 ![Foro](https://github.com/GianGougeon/Level-Up-Accesible/blob/master/screenshots/accesibilidad.png?raw=true)
 ![Foro](https://github.com/GianGougeon/Level-Up-Accesible/blob/master/screenshots/accesibilidad2.png?raw=true)
 
+### Xbox Adaptative Controller
+![XboxAdaptativeController](https://github.com/GianGougeon/Level-Up-Accesible/blob/master/screenshots/xboxAdaptativeController.png?raw=true)
+![XboxAdaptativeController](https://github.com/GianGougeon/Level-Up-Accesible/blob/master/screenshots/xboxAdaptativeController2.png?raw=true)
+![XboxAdaptativeController](https://github.com/GianGougeon/Level-Up-Accesible/blob/master/screenshots/xboxAdaptativeController3.png?raw=true)
+
 ---
 
 ## 📌 Estado del proyecto
 
-🚧 **En desarrollo**: Actualmente en fase de pruebas y mejoras.
-🛠️ Abierto a mejoras futuras como integración con backend o autenticación real.
+✅ Finalizado para entrega de curso.
 
 ---

@@ -1,8 +1,3 @@
-/* Archivo principal de estilos */
-/* abstracts */
-@use "./abstracts/accessibility";
-@use "./abstracts/variables";
-@use "./abstracts/_utilities.scss";
 /* layouts */
 @use "./layouts/_sections.scss";
 /* base */
@@ -17,3 +12,8 @@
 /* components */
 @use "./components/header";
 @use "./components/footer";
+/* Archivo principal de estilos */
+/* abstracts */
+@use "./abstracts/accessibility";
+@use "./abstracts/variables";
+@use "./abstracts/_utilities.scss";

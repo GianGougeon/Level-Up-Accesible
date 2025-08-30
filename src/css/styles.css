@@ -1,43 +1,5 @@
-/* Archivo principal de estilos */
-/* abstracts */
-a:focus,
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 3px solid #ff6b00 !important;
-}
-
-.focus-visible:focus {
-  outline: 3px solid #ff6b00 !important;
-}
-
-.card-hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card-hover:hover {
-  transform: translateY(-5px);
-}
-.card-hover:focus-within, a:focus .card-hover {
-  outline: 3px solid #ff6b00 !important;
-  box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25) !important;
-  transform: translateY(-5px);
-}
-
-/* Variables de colores y fuentes */
-/* Arreglo de header en modo tablet-mobil */
-@media screen and (max-width: 992px) {
-  .ms-auto {
-    padding-top: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .consola-logo {
-    width: 60px;
-  }
-}
 /* layouts */
+/* Variables de colores y fuentes */
 /* Mixins reutilizables */
 .background-primary {
   background-color: #1a237e;
@@ -358,6 +320,41 @@ table {
   color: white;
 }
 
+.dropdown-item {
+  padding: 0 20px !important;
+  margin: 0 !important;
+}
+
+.dropdown-accesibilidad button {
+  color: white !important;
+  font-weight: bold !important;
+}
+.dropdown-accesibilidad ul {
+  margin-top: 10% !important;
+}
+
+.dropdown-menu {
+  background-color: #6c757d !important;
+  background-color: #1a237e !important;
+  border: none !important;
+  box-shadow: none !important;
+  border: 1px solid white !important;
+  padding: 0 0 !important;
+}
+.dropdown-menu > li {
+  border-bottom: 1px solid white !important;
+}
+.dropdown-menu > li:last-child {
+  border-bottom: none !important;
+}
+.dropdown-menu > li > a {
+  padding: 10px !important;
+}
+.dropdown-menu > li > a:hover {
+  background-color: #0a58ca !important;
+  border-radius: 5% !important;
+}
+
 /* components */
 header > nav > div > a {
   font-size: 1.3rem !important;
@@ -395,6 +392,50 @@ header .navbar-nav .nav-link:focus {
 }
 .footer button:hover {
   background-color: #0a58ca !important;
+}
+
+/* Archivo principal de estilos */
+/* abstracts */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid #ff6b00 !important;
+}
+
+.focus-visible:focus {
+  outline: 3px solid #ff6b00 !important;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+}
+.card-hover:focus-within, a:focus .card-hover {
+  outline: 3px solid #ff6b00 !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 107, 0, 0.25) !important;
+  transform: translateY(-5px);
+}
+
+/* Arreglo de header en modo tablet-mobil */
+@media screen and (max-width: 992px) {
+  .ms-auto {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .consola-logo {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .dropdown-accesibilidad ul {
+    margin-top: 2% !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

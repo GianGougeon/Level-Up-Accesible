@@ -19,9 +19,10 @@
         <header>
             <nav class="navbar navbar-expand-xl navbar-dark py-3 background-primary">
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
+                    <div class="navbar-brand d-flex align-items-center" href="#">
                         <span class="me-2" aria-hidden="true">🎮</span>
                         <span>Level-Up Accesible</span>
+                    </div>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -43,8 +44,12 @@
                             <li class="nav-item mx-1">
                                 <a class="nav-link px-3 py-2 rounded" href="./foro.html">Foro de ayuda</a>
                             </li>
-                            <li class="nav-item mx-1">
-                                <a class="nav-link px-3 py-2 rounded active" href="./accesibilidad.html" aria-current="page">Accesibilidad</a>
+                            <li class="nav-item dropdown dropdown-accesibilidad mx-1">
+                                <button class="nav-link dropdown-toggle px-3 py-2 rounded" href="#" id="accesibilidadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accesibilidad</button>
+                                <ul class="dropdown-menu" aria-labelledby="accesibilidadDropdown">
+                                    <li><a class="dropdown-item active" href="./accesibilidad.html">Accesibilidad General</a></li>
+                                    <li><a class="dropdown-item" href="./xboxAdaptativeController.html">Xbox Adaptive Controller</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>

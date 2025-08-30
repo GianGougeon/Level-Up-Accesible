@@ -22,17 +22,14 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark py-3 background-primary" aria-label="Navegación principal">
                 <div class="container">
-                    <!-- Marca / Logo -->
-                    <a class="navbar-brand d-flex align-items-center" href="#" aria-label="Inicio - Level-Up Accesible">
+                    <div class="navbar-brand d-flex align-items-center" href="#">
                         <span class="me-2" aria-hidden="true">🎮</span>
                         <span>Level-Up Accesible</span>
-                    </a>
-
+                    </div>
                     <!-- Botón menú móvil -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar u ocultar menú">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <!-- Menú -->
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
@@ -40,7 +37,7 @@
                                 <a class="nav-link px-3 py-2 rounded" href="./../../index.html" aria-current="page"> Inicio </a>
                             </li>
                             <li class="nav-item mx-1">
-                                <a class="nav-link px-3 py-2 rounded active" href="../../src/pages/noticiasYLanzamientos.html"> Noticias y lanzamientos </a>
+                                <a class="nav-link px-3 py-2 rounded active" href="../../src/pages/noticiasYlanzamientos.html"> Noticias y lanzamientos </a>
                             </li>
                             <li class="nav-item mx-1">
                                 <a class="nav-link px-3 py-2 rounded" href="./consolasYperifericos.html"> Consolas y periféricos </a>
@@ -51,8 +48,12 @@
                             <li class="nav-item mx-1">
                                 <a class="nav-link px-3 py-2 rounded" href="./foro.html"> Foro de ayuda </a>
                             </li>
-                            <li class="nav-item mx-1">
-                                <a class="nav-link px-3 py-2 rounded" href="./accesibilidad.html"> Accesibilidad </a>
+                            <li class="nav-item dropdown dropdown-accesibilidad mx-1">
+                                <button class="nav-link dropdown-toggle px-3 py-2 rounded" href="#" id="accesibilidadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accesibilidad</button>
+                                <ul class="dropdown-menu" aria-labelledby="accesibilidadDropdown">
+                                    <li><a class="dropdown-item" href="./accesibilidad.html">Accesibilidad General</a></li>
+                                    <li><a class="dropdown-item active" href="./xboxAdaptativeController.html">Xbox Adaptive Controller</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -61,7 +62,7 @@
 
             <!-- Hero Section -->
             <section class="hero-section hero d-flex align-items-center text-white position-relative overflow-hidden">
-                <img src="../assets/images/Noticias y Lanzamientos/purple-gaming-nepi2tnxp6g0mvz9.jpg" alt="Pantalla con noticias de videojuegos" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
+                <img src="../assets/images/noticiasYlanzamientos/purple-gaming-nepi2tnxp6g0mvz9.jpg" alt="Pantalla con noticias de videojuegos" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
                 <div class="container text-center py-5 position-relative z-1">
                     <h1 class="display-4 fw-bold mb-3 text-outline">Noticias y Lanzamientos</h1>
                     <p class="lead lead-slogan mb-4 text-outline">Mantente al día con los últimos avances en gaming accesible</p>
@@ -80,7 +81,7 @@
                     <!-- Noticia 1 - Modal -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 card-hover">
-                            <img src="../assets/images/Noticias y Lanzamientos/Noticia 1 Nuevo lanzamiento.avif" class="card-img-top" alt="Juego con modo daltonismo" style="height: 180px; object-fit: cover" />
+                            <img src="../assets/images/noticiasYlanzamientos/Noticia 1 Nuevo lanzamiento.avif" class="card-img-top" alt="Juego con modo daltonismo" style="height: 180px; object-fit: cover" />
                             <div class="card-body">
                                 <span class="badge bg-primary mb-2">Nuevo Lanzamiento</span>
                                 <h3 class="card-title h5">"Acessible Quest" añade modo para daltónicos</h3>
@@ -93,7 +94,7 @@
                     <!-- Noticia 2 - Tooltip -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 card-hover">
-                            <img src="../assets/images/Noticias y Lanzamientos/Noticia2 Actualizacion.avif" class="card-img-top" alt="Control adaptativo" style="height: 180px; object-fit: cover" />
+                            <img src="../assets/images/noticiasYlanzamientos/Noticia2 Actualizacion.avif" class="card-img-top" alt="Control adaptativo" style="height: 180px; object-fit: cover" />
                             <div class="card-body">
                                 <span class="badge bg-primary mb-2">Actualización</span>
                                 <h3 class="card-title h5">PS5 mejora su menú de accesibilidad</h3>
@@ -106,7 +107,7 @@
                     <!-- Noticia 3 - Modal -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 card-hover">
-                            <img src="../assets/images/Noticias y Lanzamientos/Noticia 3 proximamente.avif" class="card-img-top" alt="Juego con subtítulos" style="height: 180px; object-fit: cover" />
+                            <img src="../assets/images/noticiasYlanzamientos/Noticia 3 proximamente.avif" class="card-img-top" alt="Juego con subtítulos" style="height: 180px; object-fit: cover" />
                             <div class="card-body">
                                 <span class="badge bg-primary mb-2">Próximamente</span>
                                 <h3 class="card-title h5">"Ocean Sounds" tendrá subtítulos descriptivos</h3>
@@ -169,7 +170,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="https://images.unsplash.com/photo-1633613286848-e6f43bbafb8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="img-fluid mb-3" alt="Modo daltonismo en juego" />
+                        <img src="../assets/images/noticiasYlanzamientos/Noticia 1 Nuevo lanzamiento.avif" class="img-fluid mb-3" alt="Modo daltonismo en juego" />
                         <p>El RPG <strong>"Accessible Quest"</strong> ha lanzado una actualización que incluye:</p>
                         <ul>
                             <li>8 filtros de color para diferentes tipos de daltonismo</li>

@@ -37,3 +37,37 @@
     background-color: v.$primary-color !important;
     color: white;
 }
+.dropdown-item {
+    padding: 0 20px !important;
+    margin: 0 !important;
+}
+.dropdown-accesibilidad {
+    button {
+        color: white !important;
+        font-weight: bold !important;
+    }
+    ul {
+        margin-top: 10% !important;
+    }
+}
+.dropdown-menu {
+    background-color: #6c757d !important;
+    background-color: v.$primary-color !important;
+    border: none !important;
+    box-shadow: none !important;
+    border: 1px solid white !important;
+    padding: 0 0 !important;
+    > li {
+        border-bottom: 1px solid white !important;
+        &:last-child {
+            border-bottom: none !important;
+        }
+        > a {
+            padding: 10px !important;
+            &:hover {
+                background-color: v.$secondary-color !important;
+                border-radius: 5% !important;
+            }
+        }
+    }
+}

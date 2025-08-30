@@ -22,9 +22,10 @@
         <header>
             <nav class="navbar navbar-expand-xl navbar-dark py-3 background-primary">
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
+                    <div class="navbar-brand d-flex align-items-center" href="#">
                         <span class="me-2" aria-hidden="true">🎮</span>
                         <span>Level-Up Accesible</span>
+                    </div>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -46,8 +47,12 @@
                             <li class="nav-item mx-1">
                                 <a class="nav-link px-3 py-2 rounded" href="./foro.html">Foro de ayuda</a>
                             </li>
-                            <li class="nav-item mx-1">
-                                <a class="nav-link px-3 py-2 rounded" href="./accesibilidad.html">Accesibilidad</a>
+                            <li class="nav-item dropdown dropdown-accesibilidad mx-1">
+                                <button class="nav-link dropdown-toggle px-3 py-2 rounded" href="#" id="accesibilidadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Accesibilidad </button>
+                                <ul class="dropdown-menu" aria-labelledby="accesibilidadDropdown">
+                                    <li><a class="dropdown-item" href="./accesibilidad.html">Accesibilidad General</a></li>
+                                    <li><a class="dropdown-item active" href="./xboxAdaptativeController.html">Xbox Adaptive Controller</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -56,7 +61,7 @@
 
             <!-- Hero Section -->
             <section class="hero-section hero d-flex align-items-center text-white position-relative overflow-hidden">
-                <img src="./../assets/images/perifericos-gaming-3860923-1400x788.avif" alt="Consolas PlayStation, Xbox y Nintendo Switch" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
+                <img src="./../assets/images/consolasYperifericos/perifericos-gaming-3860923-1400x788.avif" alt="Consolas PlayStation, Xbox y Nintendo Switch" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
                 <div class="container text-center py-5 position-relative z-1">
                     <h1 class="display-4 fw-bold mb-3">Consolas y Periféricos</h1>
                     <p class="lead lead-slogan mb-4">Comparativa técnica y análisis de accesibilidad</p>
@@ -83,7 +88,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-6">
-                        <img src="./../assets/images/photo-1592155931584-901ac15763e3.avif" alt="Persona usando control adaptativo" class="img-fluid rounded shadow" />
+                        <img src="./../assets/images/consolasYperifericos/photo-1592155931584-901ac15763e3.png" alt="Persona usando control adaptativo" class="img-fluid rounded shadow" />
                     </div>
                 </div>
             </section>
@@ -107,7 +112,7 @@
                             <!-- Xbox Series X|S -->
                             <tr>
                                 <td>
-                                    <img src="./../assets/images/logos/xbox-series-x.png" alt="Logo Xbox" class="consola-logo d-block mx-auto" style="width: 120px" />
+                                    <img src="./../assets/images/consolasYperifericos/logos/xbox-series-x.png" alt="Logo Xbox" class="consola-logo d-block mx-auto" style="width: 120px" />
                                     <p class="text-center mt-2 mb-0 fw-bold">Xbox Series</p>
                                 </td>
                                 <td>
@@ -138,7 +143,7 @@
                             <!-- PlayStation 5 -->
                             <tr>
                                 <td>
-                                    <img src="./../assets/images/logos/PlayStation_logo.png" alt="Logo PlayStation" class="consola-logo d-block mx-auto" />
+                                    <img src="./../assets/images/consolasYperifericos/logos/PlayStation_logo.png" alt="Logo PlayStation" class="consola-logo d-block mx-auto" />
                                     <p class="text-center mt-2 mb-0 fw-bold">PlayStation 5</p>
                                 </td>
                                 <td>
@@ -163,7 +168,7 @@
                             <!-- Nintendo Switch -->
                             <tr>
                                 <td>
-                                    <img src="./../assets/images/logos/switch.png" alt="Logo Nintendo Switch" class="consola-logo d-block mx-auto" />
+                                    <img src="./../assets/images/consolasYperifericos/logos/switch.png" alt="Logo Nintendo Switch" class="consola-logo d-block mx-auto" />
                                     <p class="text-center mt-2 mb-0 fw-bold">Nintendo Switch</p>
                                 </td>
                                 <td>
@@ -199,7 +204,7 @@
                     <!-- Periférico 1 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 card-hover">
-                            <img src="./../assets/images/photo-1600080972464-8e5f35f63d08.avif" class="card-img-top card-img-custom" alt="Xbox Adaptive Controller" />
+                            <img src="./../assets/images/consolasYperifericos/photo-1600080972464-8e5f35f63d08.png" class="card-img-top card-img-custom" alt="Xbox Adaptive Controller" />
                             <div class="card-body">
                                 <h3 class="card-title h5">Xbox Adaptive Controller</h3>
                                 <div class="mb-3">
@@ -222,7 +227,7 @@
                     <!-- Periférico 2 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 card-hover">
-                            <img src="./../assets/images/photo-1618384887929-16ec33fab9ef.avif" class="card-img-top card-img-custom" alt="Teclado Half-QWERTY" />
+                            <img src="./../assets/images/consolasYperifericos/photo-1618384887929-16ec33fab9ef.png" class="card-img-top card-img-custom" alt="Teclado Half-QWERTY" />
                             <div class="card-body">
                                 <h3 class="card-title h5">Teclado Half-QWERTY</h3>
                                 <div class="mb-3">
@@ -244,7 +249,7 @@
                     <!-- Periférico 3 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 card-hover">
-                            <img src="./../assets/images/photo-1551650975-87deedd944c3.avif" class="card-img-top card-img-custom" alt="Ratón de pie" />
+                            <img src="./../assets/images/consolasYperifericos/photo-1551650975-87deedd944c3.png" class="card-img-top card-img-custom" alt="Ratón de pie" />
                             <div class="card-body">
                                 <h3 class="card-title h5">Ratón de Pie 3D</h3>
                                 <div class="mb-3">

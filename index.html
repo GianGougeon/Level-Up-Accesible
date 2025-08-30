@@ -20,9 +20,10 @@
         <header>
             <nav class="navbar navbar-expand-xl navbar-dark py-3 background-primary">
                 <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
+                    <div class="navbar-brand d-flex align-items-center" href="#">
                         <span class="me-2" aria-hidden="true">🎮</span>
                         <span>Level-Up Accesible</span>
+                    </div>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -44,8 +45,12 @@
                             <li class="nav-item mx-1">
                                 <a class="nav-link px-3 py-2 rounded" href="./src/pages/foro.html">Foro de ayuda</a>
                             </li>
-                            <li class="nav-item mx-1">
-                                <a class="nav-link px-3 py-2 rounded" href="./src/pages/accesibilidad.html">Accesibilidad</a>
+                            <li class="nav-item dropdown mx-1 dropdown-accesibilidad">
+                                <button class="nav-link dropdown-toggle px-3 py-2 rounded" href="#" id="accesibilidadDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accesibilidad</button>
+                                <ul class="dropdown-menu" aria-labelledby="accesibilidadDropdown">
+                                    <li><a class="dropdown-item" href="./src/pages/accesibilidad.html">Accesibilidad General</a></li>
+                                    <li><a class="dropdown-item" href="./src/pages/xboxAdaptativeController.html">Xbox Adaptive Controller</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -54,7 +59,7 @@
 
             <!-- Sección principal de bienvenida con imagen de fondo, título, texto descriptivo y botones de llamada a la acción -->
             <section class="hero-section hero d-flex align-items-center text-white position-relative overflow-hidden">
-                <img src="./src/assets/images/photo-1542751371-adc38448a05e.avif" alt="Persona usando un control de videojuegos, fondo de ambiente gamer" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
+                <img src="./src/assets/images/inicio/photo-1542751371-adc38448a05e.avif" alt="Persona usando un control de videojuegos, fondo de ambiente gamer" class="hero-img position-absolute w-100 h-100 object-fit-cover" />
                 <!-- Contenido -->
                 <div class="container text-center py-5 position-relative z-1">
                     <h1 class="display-3 fw-bold mb-4">Bienvenidos a Level-Up Accesible</h1>
@@ -80,7 +85,7 @@
                     </article>
                     <figure class="col-lg-6">
                         <div class="ratio ratio-16x9">
-                            <img src="./src/assets/images/24ec494c-766a-4e68-aafd-6d24f78cffa5.webp" alt="Nuestra Comunidad" />
+                            <img src="./src/assets/images/inicio/24ec494c-766a-4e68-aafd-6d24f78cffa5.webp" alt="Nuestra Comunidad" />
                         </div>
                     </figure>
                 </div>
@@ -93,7 +98,7 @@
                         <div class="col-md-6 col-lg-3">
                             <a href="./src/pages/noticiasYlanzamientos.html" class="text-decoration-none">
                                 <div class="card h-100 card-hover">
-                                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Videojuegos accesibles" style="height: 150px; object-fit: cover" />
+                                    <img src="./src/assets/images/inicio/photo-1542751371-adc38448a05e.avif" class="card-img-top" alt="Videojuegos accesibles" style="height: 150px; object-fit: cover" />
                                     <div class="card-body">
                                         <h3 class="card-title h5 texto-primary">Videojuegos</h3>
                                         <p class="card-text">Descubre juegos con opciones de accesibilidad y cómo configurarlos para tus necesidades.</p>
@@ -104,7 +109,7 @@
                         <div class="col-md-6 col-lg-3">
                             <a href="./src/pages/consolasYperifericos.html" class="text-decoration-none">
                                 <div class="card h-100 card-hover">
-                                    <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1478&q=80" class="card-img-top" alt="Hardware accesible" style="height: 150px; object-fit: cover" />
+                                    <img src="./src/assets/images/inicio/photo-1593508512255-86ab42a8e620.avif" class="card-img-top" alt="Hardware accesible" style="height: 150px; object-fit: cover" />
                                     <div class="card-body">
                                         <h3 class="card-title h5 texto-primary">Hardware</h3>
                                         <p class="card-text">Conoce los periféricos y consolas adaptados para diferentes discapacidades.</p>
@@ -115,7 +120,7 @@
                         <div class="col-md-6 col-lg-3">
                             <a href="./src/pages/comunidades.html" class="text-decoration-none">
                                 <div class="card h-100 card-hover">
-                                    <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" class="card-img-top" alt="Comunidades inclusivas" style="height: 150px; object-fit: cover" />
+                                    <img src="./src/assets/images/inicio/photo-1517430816045-df4b7de11d1d.avif" class="card-img-top" alt="Comunidades inclusivas" style="height: 150px; object-fit: cover" />
                                     <div class="card-body">
                                         <h3 class="card-title h5 texto-primary">Comunidades</h3>
                                         <p class="card-text">Conecta con otros jugadores y grupos que promueven el gaming inclusivo.</p>
@@ -126,7 +131,7 @@
                         <div class="col-md-6 col-lg-3">
                             <a href="./src/pages/foro.html" class="text-decoration-none">
                                 <div class="card h-100 card-hover">
-                                    <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Recursos y guías" style="height: 150px; object-fit: cover" />
+                                    <img src="./src/assets/images/inicio/photo-1551033406-611cf9a28f67.avif" class="card-img-top" alt="Recursos y guías" style="height: 150px; object-fit: cover" />
                                     <div class="card-body">
                                         <h3 class="card-title h5 texto-primary">Recursos</h3>
                                         <p class="card-text">Guías, tutoriales y herramientas para mejorar tu experiencia de juego.</p>

@@ -10,3 +10,11 @@
         width: 60px;
     }
 }
+// Para el dropdown de accesibilidad
+.dropdown-accesibilidad {
+    @media screen and (max-width: 1200px) {
+        ul {
+            margin-top: 2% !important;
+        }
+    }
+}
